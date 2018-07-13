@@ -10,7 +10,7 @@ public class BoardInteger {
     private SList<Integer> antidiagonal;
     private String configuration;
 
-    private static final String alphabet = "abcdefghijklmnopqrstuvwxyz";
+    private static final String alphabet = " abcdefghijklmnopqrstuvwxyz";
 
     public BoardInteger(int _dimension){
         dimension = _dimension;
@@ -76,7 +76,7 @@ public class BoardInteger {
     private String coordsToTextRepresentation(int _row, int _column){
         String _s = "";
         String letter = String.valueOf(alphabet.charAt(_row%alphabet.length()));
-        _s = letter+_column+" ";
+        _s = letter+(1+_column)+" ";
         return _s;
     }
 
