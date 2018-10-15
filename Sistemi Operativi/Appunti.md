@@ -178,3 +178,49 @@ Copia del testo preso dal 1° campo (**-f1**) dopo il limitatore (**:**)
 
 Prende la prima linea del primo file e ci concatena la prima linea del secondo inserendo a metà un
 delimitatore
+
+La shell usa l'|| (or logico) per l'esecuzione di un comando se un altro fallisce per rimanere in linea con lo short-circuiting degli operatori, infatti se il primo elemento di un or è vero non serve valutare il secondo, invece se il primo è falso è necessario valutare anche il secondo
+
+
+**sed**
+
+Stream editor, modifica e trasforma uno stream di testo
+
+q: quit
+y: carachter translation y/:o/\_\%/ trasforma : in _ e o in %
+s: sostituzione di testo
+  s/expr/new/flags
+  expr: l'espressione da ricercare nel testo(solo la prima occorrenza viene sostituita, il numero dell'occorrenza può essere modificato usando il flag num:1-9 oppure num:g (global))
+  new: stringa da rimpiazzante
+  flags: flagName:
+  & rappresenta la stringa matchata nella precedente espressione regolare
+
+# Shell Script  
+
+## Comandi di debug
+ - **set -x** :Stampa l'espansione dei comandi dovuti ai caratteri jolly
+ - **set -v** :Stampa il comando che viene eseguito
+
+## Variabili  
+Nella shell tutte le variabili sono sequenze di caratteri
+
+**y=variabile**
+**x='variabile con spazi i caratteri jolly ?.'**
+
+per accedere alla variabile si usa **$variabile** ($y)
+le variabili sono locali alla shell
+per rendere globale una variabile si usa il comando  
+**export variabile**, questo tipo di variabile è accessibile anche
+alle shell figlie, la cancellazione di una variabile d'ambiente ha effetto
+solo sulle shell figlie
+
+Le variabili di ambiente predefinite sono:
+ - $PS1: prompt (PS1='prompt' permette di ridefinire il prompt)
+ - $PATH: cartella in cui la shell cerca gli eseguibili
+ - $UID: UID dell'utente corrente
+
+Le variabili $1-$9 rappresentano i parametri passati dalla linea di comando
+ - il comando shift permette ad ogni parametro di prendere il valore del successivo, in modo che dopo uno shift il valore di $9 sia il decimo parametro passato
+ 
+
+## Costrutti della shell
