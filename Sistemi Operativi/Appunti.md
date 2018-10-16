@@ -205,7 +205,7 @@ s: sostituzione di testo
 Nella shell tutte le variabili sono sequenze di caratteri
 
 **y=variabile**
-**x='variabile con spazi i caratteri jolly ?.'**
+**x='variabile con spazi e caratteri jolly ?.'**
 
 per accedere alla variabile si usa **$variabile** ($y)
 le variabili sono locali alla shell
@@ -223,4 +223,54 @@ Le variabili $1-$9 rappresentano i parametri passati dalla linea di comando
  - il comando shift permette ad ogni parametro di prendere il valore del successivo, in modo che dopo uno shift il valore di $9 sia il decimo parametro passato
  
 
+## Variabili di stato automatiche  
+Variabili che gestiscono lo stato, possono solo essere lette, e sono
+ - $?: contiene l'exit status dell'ultimo comando, l'exit status è 0 se l'ultimo comando eseguito
+ - $$: PID della shell corrente (utile per creare dei file unici (nella cartella tmp))
+ - $#: numero dei parametri passati
+ - $\*: lista di tutti i parametri passati sulla linea di comando
+ 
+## Login script  
+Uno script di login è uno script che viene eseguito al login, utile per configurare il sistema e impostare
+variabili di sistema
+(è possibile creare anche uno script di output)
+
+
 ## Costrutti della shell
+
+### if  
+if (condizione) then
+ (se vero)
+else
+ (se falso)
+fi
+
+### Controllo di flusso  
+while (condizione) do  
+ (comandi)  
+done  
+
+until (condizione) do  
+ (comandi)  
+done  
+
+until esegue se (condizione) ritorna falso
+
+for var in wordlist do  
+ (comandi)  
+done  
+
+## Command substitution  
+La command substitution permette di catturare l'output di un comando
+output=\`date\`
+ora output non conterrà il comando date ma l'output del comando date
+
+
+
+
+
+
+
+
+
+
