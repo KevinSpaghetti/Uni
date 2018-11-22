@@ -1,26 +1,22 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <time.h>
 
 #include "Complex.h"
 #include "lists.h"
 #include "files.h"
+#include "permissions.h"
+#include "pipes.h"
+#include "sockets.h"
 
 #define BOOL int
 #define FALSE 0
 #define TRUE  1
 
 #define LOG_BASE 10
-
-//Esercizi
-void printEOF(void);
-void countChars(void);
-void wordLengthIstogram(void);
-void wordCount(void);
-
-//Funzione
-int is_whitespace(char);
-int lg(int);
-void order(int*,int);
 
 //Puntatori
 void printSum(void);
@@ -30,7 +26,7 @@ void reverseFromStdin(void);
 void sortFromStdin(void);
 
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv, char **envp) {
     
     /*
     int array[] = {5, 4, 3, 2, 1, 7, 8, 5};
@@ -47,9 +43,7 @@ int main(int argc, char **argv) {
     _qsort(array, sizeof(array)/sizeof(int));
     reverseFromStdin();
     sortFromStdin();
-    */
     
-    /* //Structs e puntatori
     struct complex number = {
         8.0,
         4.0
@@ -61,7 +55,6 @@ int main(int argc, char **argv) {
     struct complex *created = from_polar(20.0, 10.0);
     printf("Created: %f, %f \n", created->real, created->immaginary);
     
-    /*
     struct node *head = create(5);
     append(head, 6);
     append(head, 9);
@@ -70,72 +63,33 @@ int main(int argc, char **argv) {
     printf("List count: %d \n", length(head));
     printf("List find element 6: %d \n", find(head, 6));
     printf("List find element 1: %d \n", find(head, 1));
-    */
     
-    //File
-    /*
     cat(argc, argv);
-    */
     diff(argc, argv);
     
+    file_exec(argc, argv, envp);
     
+    print_random(10);
+    posix_print_random(10);
+    
+    //Sul mac i secondi trascorsi dalla mezzanotte di capodanno
+    //del 1970 si ottengono usando la struttura timespec
+    time_t ctime = time(NULL);
+    struct timespec mtime;
+    clock_gettime(0, &mtime);
+    
+    printf("%ld \n", ctime);
+    printf("%ld \n", mtime.tv_sec);
+     
+    char *filename = argv[1];
+    int seconds = 0;
+    sscanf(argv[2], "%d", &seconds);
+    count_file_modifies(filename, seconds);
+    cat_pipes(argc, argv, envp);
+    echo_client(argc, argv);
+    */
+     
     return 0;
-}
-
-void printEOF(){
-    printf("%c\n", EOF);
-}
-
-void countChars(){
-    
-    long spaces = 0;
-    long tabs = 0;
-    long newlines = 0;
-    
-    char input = getchar();
-    
-    while (input != EOF) {
-        
-        if( input == ' ' ){ spaces++; }
-        if( input == '\n' ){ newlines++; }
-        if( input == '\t' ) {tabs++; }
-        
-        input = getchar();
-    }
-    
-    printf("Spaces: %ld \n", spaces);
-    printf("Tabs: %ld \n", tabs);
-    printf("Newlines: %ld \n", newlines);
-}
-
-void wordLengthIstogram(){
-    
-    char input = getchar();
-    
-    while (input != EOF) {
-        if( input != '\n' ){
-            putchar('-');
-        }else{
-            putchar('\n');
-        }
-        
-        input = getchar();
-    }
-    
-    
-}
-
-void wordCount(){
-    long wordCount = 0;
-    
-    char input = getchar();
-    while ( input != EOF ) {
-        if( input == ' ') { wordCount++; }
-        input = getchar();
-    }
-    wordCount++;
-    
-    printf("Word Count: %ld \n", wordCount);
 }
 
 int is_whitespace(char input){

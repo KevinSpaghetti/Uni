@@ -90,7 +90,6 @@ void print_random(int count){
 }
 
 void posix_print_random(int count){
-    
     int file_descriptor = open("/dev/urandom", O_RDONLY);
     int *current = malloc(sizeof(int));
     while ( count > 0 ){
@@ -98,7 +97,6 @@ void posix_print_random(int count){
         printf("%d \n", *current);
         count--;
     }
-
 }
 
 void count_file_modifies(const char *filename, int seconds){
@@ -114,9 +112,7 @@ void count_file_modifies(const char *filename, int seconds){
     //terminare
     time_t current_time = time(NULL);
     time_t end_time = current_time + seconds;
-    
-    printf("%s\n", filename);
-    
+
     while( current_time < end_time ){
         //Ricarico i metadati del file
         stat(filename, &file_stat);
