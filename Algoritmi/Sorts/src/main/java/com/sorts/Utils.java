@@ -1,5 +1,7 @@
 package com.sorts;
 
+import java.util.Random;
+
 public class Utils {
 
     public static Integer maxIndexFor(Integer[] array, Integer lowerBound, Integer upperBound){
@@ -23,6 +25,15 @@ public class Utils {
             System.out.print( array[i] +  " ");
         }
         System.out.println("");
+    }
+
+    public static Integer[] randomArrayOfSize(Integer size){
+        Integer[] array = new Integer[size];
+        Random generator = new Random();
+        for (int i = 0; i < size; i++){
+            array[i] = generator.nextInt(20000);
+        }
+        return array;
     }
 
 }

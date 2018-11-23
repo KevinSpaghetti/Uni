@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe12e848-a38b-44ac-b8a4-9b6c8d049d3e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../OOP/.idea/libraries/Maven__org_jfree_jfreechart_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../OOP/src/main/java/speedtest/SpeedChart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algoritmi e Strutture Dati/Esercizi.xcodeproj/project.pbxproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algoritmi e Strutture Dati/Esercizi.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algoritmi e Strutture Dati/Esercizi.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algoritmi e Strutture Dati/Esercizi.xcodeproj/project.xcworkspace/xcuserdata/Kevin.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algoritmi e Strutture Dati/Esercizi.xcodeproj/xcuserdata/Kevin.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algoritmi e Strutture Dati/Esercizi.xcodeproj/xcuserdata/Kevin.xcuserdatad/xcschemes/Esercizi.xcscheme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algoritmi e Strutture Dati/Esercizi.xcodeproj/xcuserdata/Kevin.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algoritmi e Strutture Dati/Esercizi/Array.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algoritmi e Strutture Dati/Esercizi/Array.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algoritmi e Strutture Dati/Esercizi/Sorts.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algoritmi e Strutture Dati/Esercizi/Sorts.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algoritmi e Strutture Dati/Esercizi/main.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algoritmi e Strutture Dati/Esercizi/main.hpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi Operativi/Appunti.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/FilesystemFile.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/Processi.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/Root/rm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/Script.sh" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programmazione ad oggetti/Esercizi/src/com/adt/DensePoly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programmazione ad oggetti/Esercizi/src/com/adt/EmptyIntBagException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programmazione ad oggetti/Esercizi/src/com/adt/NegativeExponentException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Programmazione ad oggetti/Esercizi/src/com/adt/Poly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programmazione ad oggetti/Esercizi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programmazione ad oggetti/Esercizi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programmazione ad oggetti/Esercizi/out/production/Esercizi/com/adt/IntBag.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programmazione ad oggetti/Esercizi/out/production/Esercizi/com/adt/IntBag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Programmazione ad oggetti/Esercizi/src/com/adt/IntBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Programmazione ad oggetti/Esercizi/src/com/adt/IntBag.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -77,29 +63,30 @@
     <session id="2135017642">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1795" />
+          <entry key="java" value="2201" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1795" />
+          <entry key="JAVA" value="2201" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="java" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -109,8 +96,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sorts/Sort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+            <state relative-caret-position="90">
+              <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
               <folding>
                 <element signature="method#bubble#0;class#Sort#0" />
                 <element signature="method#insertion#0;class#Sort#0" />
@@ -129,17 +116,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/com/sorts/SortTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="73" column="25" lean-forward="true" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
+            <state relative-caret-position="225">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#bubble#0;class#SortTest#0" />
-                <element signature="method#insertion#0;class#SortTest#0" />
                 <element signature="method#selection#0;class#SortTest#0" />
                 <element signature="method#merge#0;class#SortTest#0" />
-                <element signature="method#mergeArray#0;class#SortTest#0" />
+                <element signature="method#heap#0;class#SortTest#0" />
                 <element signature="method#quick#0;class#SortTest#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sorts/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -166,9 +161,9 @@
         <option value="$PROJECT_DIR$/src/tests/SortTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/tests/SortTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sorts/Heap.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sorts/Utils.java" />
         <option value="$PROJECT_DIR$/tests/com/sorts/SortTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sorts/Heap.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sorts/Sort.java" />
       </list>
     </option>
@@ -193,6 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -226,11 +222,21 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sorts" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Sorts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sorts" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Sorts" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Sorts" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="sorts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -238,7 +244,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542120485317" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542990326971" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -300,25 +306,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortTest.mergeArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Sorts" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sorts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="11" />
-      <option name="PACKAGE_NAME" value="com.sorts" />
-      <option name="MAIN_CLASS_NAME" value="com.sorts.SortTest" />
-      <option name="METHOD_NAME" value="mergeArray" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
@@ -332,12 +319,10 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.SortTest" />
-      <item itemvalue="JUnit.SortTest.mergeArray" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SortTest" />
-        <item itemvalue="JUnit.SortTest.mergeArray" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -353,34 +338,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SortTest - 2018.11.13 at 15h 41m 22s.xml">
+    <history-entry file="SortTest_mergeArray - 2018.11.23 at 17h 08m 08s.xml">
+      <configuration name="SortTest.mergeArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SortTest - 2018.11.23 at 17h 08m 49s.xml">
       <configuration name="SortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortTest - 2018.11.13 at 15h 42m 17s.xml">
+    <history-entry file="SortTest - 2018.11.23 at 17h 12m 29s.xml">
       <configuration name="SortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortTest - 2018.11.13 at 15h 42m 28s.xml">
+    <history-entry file="SortTest - 2018.11.23 at 17h 12m 58s.xml">
       <configuration name="SortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortTest - 2018.11.13 at 15h 42m 58s.xml">
+    <history-entry file="SortTest - 2018.11.23 at 17h 14m 41s.xml">
       <configuration name="SortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortTest - 2018.11.13 at 15h 43m 41s.xml">
+    <history-entry file="SortTest - 2018.11.23 at 17h 14m 57s.xml">
       <configuration name="SortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortTest - 2018.11.13 at 15h 45m 58s.xml">
+    <history-entry file="SortTest - 2018.11.23 at 17h 22m 07s.xml">
       <configuration name="SortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortTest - 2018.11.13 at 15h 46m 12s.xml">
+    <history-entry file="SortTest - 2018.11.23 at 17h 22m 27s.xml">
       <configuration name="SortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortTest - 2018.11.13 at 15h 47m 01s.xml">
+    <history-entry file="SortTest - 2018.11.23 at 17h 22m 32s.xml">
       <configuration name="SortTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortTest - 2018.11.13 at 15h 47m 17s.xml">
-      <configuration name="SortTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SortTest - 2018.11.13 at 15h 48m 09s.xml">
+    <history-entry file="SortTest - 2018.11.23 at 17h 25m 28s.xml">
       <configuration name="SortTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -388,7 +373,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17739628" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1795422" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -474,40 +459,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sorts/Heap.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sorts/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="295">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/com/sorts/SortTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="73" column="25" lean-forward="true" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
+        <state relative-caret-position="225">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#bubble#0;class#SortTest#0" />
-            <element signature="method#insertion#0;class#SortTest#0" />
             <element signature="method#selection#0;class#SortTest#0" />
             <element signature="method#merge#0;class#SortTest#0" />
-            <element signature="method#mergeArray#0;class#SortTest#0" />
+            <element signature="method#heap#0;class#SortTest#0" />
             <element signature="method#quick#0;class#SortTest#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sorts/Heap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sorts/Sort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="114" column="4" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+        <state relative-caret-position="90">
+          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
           <folding>
             <element signature="method#bubble#0;class#Sort#0" />
             <element signature="method#insertion#0;class#Sort#0" />

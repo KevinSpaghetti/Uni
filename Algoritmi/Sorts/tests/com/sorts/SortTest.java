@@ -2,7 +2,6 @@ package com.sorts;
 
 import org.junit.jupiter.api.Test;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -11,7 +10,7 @@ class SortTest {
 
     @Test
     void bubble() {
-        Integer[] array = {2, 1, 4, 3, 5, 8, 6, 7, 9};
+        Integer[] array =Utils.randomArrayOfSize(1000);
         Integer[] target = array.clone();
 
         Sort.bubble(array);
@@ -22,7 +21,7 @@ class SortTest {
 
     @Test
     void insertion() {
-        Integer[] array = {2, 1, 4, 3, 5, 8, 6, 7, 9};
+        Integer[] array = Utils.randomArrayOfSize(100);
         Integer[] target = array.clone();
 
         Sort.insertion(array);
@@ -33,7 +32,7 @@ class SortTest {
 
     @Test
     void selection() {
-        Integer[] array = {2, 1, 4, 3, 5, 8, 6, 7, 9};
+        Integer[] array =Utils.randomArrayOfSize(1000);
         Integer[] target = array.clone();
 
         Sort.selection(array);
@@ -44,7 +43,7 @@ class SortTest {
 
     @Test
     void merge() {
-        Integer[] array = {2, 1, 4, 3, 5, 8, 6, 7, 9, 10};
+        Integer[] array =Utils.randomArrayOfSize(1000);
         Integer[] target = array.clone();
 
         Sort.merge(array);
@@ -54,18 +53,8 @@ class SortTest {
     }
 
     @Test
-    void mergeArray(){
-        Integer[] array = {1, 3, 5, 10, 12, 2, 4, 7, 9};
-
-        Sort.mergeArray(array, 0, array.length / 2, array.length - 1);
-
-        Integer[] target = {1, 2, 3, 4, 5, 7, 9, 10, 12};
-        assertArrayEquals(array, target,"Array not merged correctly");
-    }
-
-    @Test
     void heap() {
-        Integer[] array = {2, 1, 4, 3, 5, 8, 6, 7, 9, 10};
+        Integer[] array =Utils.randomArrayOfSize(1000);
         Integer[] target = array.clone();
 
         Sort.heap(array);
@@ -76,7 +65,7 @@ class SortTest {
 
     @Test
     void quick() {
-        Integer[] array = {2, 1, 4, 3, 5, 8, 6, 7, 9};
+        Integer[] array =Utils.randomArrayOfSize(1000);
         Integer[] target = array.clone();
 
         Sort.quick(array);

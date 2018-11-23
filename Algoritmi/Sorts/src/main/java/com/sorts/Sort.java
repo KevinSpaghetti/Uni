@@ -1,7 +1,5 @@
 package com.sorts;
 
-import sun.nio.ch.Util;
-
 public class Sort{
 
     public static void bubble(Integer[] array){
@@ -20,14 +18,14 @@ public class Sort{
     }
 
     public static void insertion(Integer[] array){
-        for (int i = 0; i < array.length - 1; i++) {
-            for (int j = i; j >= 1;j--){
-                if(array[j] < array[j - 1]){
-                    Integer a = array[i];
-                    array[i] = array[i - 1];
-                    array[i - 1] = a;
-                }
+        for (int i = 1; i < array.length; i++) {
+            int pivot = array[i];
+            int j = i - 1;
+            while( (j >= 0) && (array[j] > pivot) ){
+                array[j + 1] = array[j];
+                j--;
             }
+            array[j + 1] = pivot;
         }
     }
 

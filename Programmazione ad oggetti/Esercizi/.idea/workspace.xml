@@ -2,61 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="678dcfdc-e26d-46ef-8727-29f991551beb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/adt/IntBag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C/permissions.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C/permissions.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/.idea/libraries/Maven__org_jfree_jfreechart_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/OOP.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/out/production/OOP/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/out/production/OOP/Main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/out/production/OOP/Main$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/out/production/OOP/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/out/production/OOP/speedtest/DataFeed$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/out/production/OOP/speedtest/DataFeed$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/out/production/OOP/speedtest/DataFeed$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/out/production/OOP/speedtest/DataFeed$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/out/production/OOP/speedtest/DataFeed$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/out/production/OOP/speedtest/DataFeed$Type.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/out/production/OOP/speedtest/DataFeed.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/out/production/OOP/speedtest/SpeedTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/out/production/OOP/speedtest/SpeedTest$OutputFormat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/out/production/OOP/speedtest/SpeedTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/src/main/java/speedtest/DataFeed.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/src/main/java/speedtest/SpeedChart.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/src/main/java/speedtest/SpeedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/target/classes/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/target/classes/Main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/target/classes/Main$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/target/classes/speedtest/DataFeed$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/target/classes/speedtest/DataFeed$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/target/classes/speedtest/DataFeed$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/target/classes/speedtest/DataFeed$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/target/classes/speedtest/DataFeed$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/target/classes/speedtest/DataFeed$Type.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/target/classes/speedtest/DataFeed.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/target/classes/speedtest/SpeedChart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/target/classes/speedtest/SpeedTest$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/target/classes/speedtest/SpeedTest$Measure.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/target/classes/speedtest/SpeedTest$OutputFormat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OOP/target/classes/speedtest/SpeedTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C.xcodeproj/project.xcworkspace/xcuserdata/kevinds27.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C.xcodeproj/project.xcworkspace/xcuserdata/kevinds27.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C.xcodeproj/xcshareddata/xcschemes/C.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C.xcodeproj/xcshareddata/xcschemes/C.xcscheme" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C.xcodeproj/xcuserdata/kevinds27.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C.xcodeproj/xcuserdata/kevinds27.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C/files.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C/files.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/files.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/files.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/adt/DensePoly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/adt/EmptyIntBagException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/adt/NegativeExponentException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/adt/Poly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Esercizi/com/adt/IntBag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Esercizi/com/adt/IntBag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/adt/IntBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/adt/IntBag.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,30 +21,32 @@
     <session id="-2065005457">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.110" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.33" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.62" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="1" />
+          <entry key="java" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="1" />
+          <entry key="JAVA" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="325" />
+          <entry key="java" value="10834" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="325" />
+          <entry key="JAVA" value="10834" />
         </counts>
       </usages-collector>
     </session>
@@ -100,10 +54,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/esercizi/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/com/adt/DensePoly.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -111,11 +65,26 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/adt/IntBag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+            <state relative-caret-position="1890">
+              <caret line="130" selection-start-line="130" selection-end-line="130" />
               <folding>
-                <element signature="e#158#159#0" expanded="true" />
-                <element signature="e#199#200#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/adt/Poly.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2490">
+              <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="class#PolyTerm#0;class#Poly#0" />
+                <element signature="e#1243#1244#0" expanded="true" />
+                <element signature="e#1282#1283#0" expanded="true" />
+                <element signature="method#toString#0;class#Poly#0" />
               </folding>
             </state>
           </provider>
@@ -130,6 +99,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Poly</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>DensePoly</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
@@ -138,6 +115,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/esercizi/Main.java" />
         <option value="$PROJECT_DIR$/src/com/adt/IntBag.java" />
+        <option value="$PROJECT_DIR$/src/com/adt/EmptyIntBagException.java" />
+        <option value="$PROJECT_DIR$/src/com/adt/NegativeExponentException.java" />
+        <option value="$PROJECT_DIR$/src/com/adt/DensePoly.java" />
+        <option value="$PROJECT_DIR$/src/com/adt/Poly.java" />
       </list>
     </option>
   </component>
@@ -155,7 +136,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -179,16 +159,25 @@
               <item name="Esercizi" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="adt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esercizi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esercizi" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="esercizi" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542612542431" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542989054611" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -202,7 +191,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Poly">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.esercizi.Main" />
       <module name="Esercizi" />
@@ -213,8 +202,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Poly" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.adt.Poly" />
+      <module name="Esercizi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.adt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Poly" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Poly" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -233,14 +240,13 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
@@ -251,6 +257,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -265,6 +272,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/adt/EmptyIntBagException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/esercizi/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -272,13 +286,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/adt/NegativeExponentException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/adt/DensePoly.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/adt/Poly.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2490">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#PolyTerm#0;class#Poly#0" />
+            <element signature="e#1243#1244#0" expanded="true" />
+            <element signature="e#1282#1283#0" expanded="true" />
+            <element signature="method#toString#0;class#Poly#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/adt/IntBag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        <state relative-caret-position="1890">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
           <folding>
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
