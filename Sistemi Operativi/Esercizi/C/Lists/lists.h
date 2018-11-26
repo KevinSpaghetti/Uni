@@ -1,10 +1,3 @@
-//
-//  lists.h
-//  C
-//
-//  Created by Kevin Della schiava on 13/11/18.
-//  Copyright © 2018 Esercizi. All rights reserved.
-//
 
 #ifndef lists_h
 #define lists_h

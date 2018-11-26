@@ -1,10 +1,3 @@
-//
-//  permissions.h
-//  C
-//
-//  Created by Kevin Della schiava on 14/11/18.
-//  Copyright © 2018 Esercizi. All rights reserved.
-//
 
 #ifndef permissions_h
 #define permissions_h

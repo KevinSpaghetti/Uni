@@ -14,8 +14,8 @@
 void upperlines(int in, int out);
 void handle_sigchld(int);
 
-int main (int argc, char **argv)
-{
+int main (int argc, char **argv){
+    
   // imposto l'handler per SIGCHLD, in modo da non creare processi zombie
   signal(SIGCHLD, handle_sigchld);
 

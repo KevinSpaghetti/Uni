@@ -1,10 +1,3 @@
-//
-//  sockets.c
-//  C
-//
-//  Created by Kevin Della schiava on 22/11/18.
-//  Copyright © 2018 Esercizi. All rights reserved.
-//
 
 #include "sockets.h"
 #include <stdlib.h>

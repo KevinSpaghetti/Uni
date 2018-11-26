@@ -1,10 +1,3 @@
-//
-//  pipes.c
-//  C
-//
-//  Created by Kevin Della schiava on 19/11/18.
-//  Copyright © 2018 Esercizi. All rights reserved.
-//
 
 #include "pipes.h"
 #include <stdlib.h>

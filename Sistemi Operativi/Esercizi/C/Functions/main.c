@@ -1,10 +1,3 @@
-//
-//  main.c
-//  Functions
-//
-//  Created by Kevin Della schiava on 22/11/18.
-//  Copyright © 2018 Esercizi. All rights reserved.
-//
 
 #include <stdio.h>
 #include <math.h>

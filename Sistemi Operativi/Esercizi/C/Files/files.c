@@ -1,10 +1,3 @@
-//
-//  files.c
-//  C
-//
-//  Created by Kevin Della schiava on 13/11/18.
-//  Copyright © 2018 Esercizi. All rights reserved.
-//
 
 #include <stdlib.h>
 #include <unistd.h>
