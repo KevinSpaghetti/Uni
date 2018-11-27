@@ -8,6 +8,9 @@ class DensePolyTest {
 
     @Test
     void degree() {
+
+
+
     }
 
     @Test
@@ -23,11 +26,11 @@ class DensePolyTest {
     }
 
     @Test
-    void multiply() {
+    void multiplyPolynomial() {
     }
 
     @Test
-    void multiply1() {
+    void multiplyScalar() {
     }
 
 }

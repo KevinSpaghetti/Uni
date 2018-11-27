@@ -13,35 +13,6 @@ import java.util.Vector;
  */
 public class Poly implements PolynomialOperations<Poly> {
 
-    /**
-     * Represents a single term of the polynomial
-     */
-    private class PolyTerm implements Cloneable {
-        Integer coefficent;
-        Integer exponent;
-
-        /**
-         * Init a polynomial
-         * @param coefficent the coefficent of the polynomial
-         * @param exponent the exponent associated with the polinomial
-         */
-        PolyTerm(Integer coefficent, Integer exponent){
-            this.coefficent = coefficent;
-            this.exponent = exponent;
-        }
-
-        /**
-         * Copies the original PolyTerm
-         * @param original the original from which the copy
-         *                 will be made
-         */
-        PolyTerm(PolyTerm original){
-            assert(original != null);
-            this.coefficent = original.coefficent;
-            this.exponent = original.exponent;
-        }
-    }
-
     private Vector<PolyTerm> terms;
 
     /**

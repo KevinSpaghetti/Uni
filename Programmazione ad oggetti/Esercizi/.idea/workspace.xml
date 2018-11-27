@@ -2,29 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="678dcfdc-e26d-46ef-8727-29f991551beb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/com/adt/DensePolyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/com/adt/IntBagTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/com/adt/PolyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algoritmi/Sorts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algoritmi/Sorts/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/com/adt/PolyTermTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/adt/PolyTerm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Esercizi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizi.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Esercizi/com/adt/DensePoly.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Esercizi/com/adt/DensePoly.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/adt/DensePoly.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/adt/IntBag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/adt/Poly.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/adt/exceptions/EmptyIntBagException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/adt/exceptions/NegativeExponentException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/esercizi/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Sorts/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/com/adt/DensePolyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/com/adt/DensePolyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/com/adt/IntBagTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/com/adt/IntBagTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adt/DensePoly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adt/DensePoly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adt/Interfaces/PolynomialOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adt/Interfaces/PolynomialOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adt/Poly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adt/Poly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/DensePoly.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adt/DensePoly.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/IntBag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adt/IntBag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/Interfaces/PolynomialOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adt/Interfaces/PolynomialOperations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/Poly.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adt/Poly.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/exceptions/EmptyIntBagException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adt/exceptions/EmptyIntBagException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/exceptions/NegativeExponentException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adt/exceptions/NegativeExponentException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adt/DensePolyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/adt/DensePolyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adt/IntBagTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/adt/IntBagTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adt/PolyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/adt/PolyTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,36 +35,41 @@
     <session id="-2065005457">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.110" value="1" />
           <entry key="project.open.time.127" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.62" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.73" value="1" />
+          <entry key="project.open.time.82" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="22" />
+          <entry key="java" value="35" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="22" />
+          <entry key="JAVA" value="34" />
+          <entry key="Scratch" value="1" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="12412" />
+          <entry key="java" value="13649" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12412" />
+          <entry key="JAVA" value="13640" />
+          <entry key="Scratch" value="9" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -76,25 +78,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/DensePoly.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/IntBag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            <state relative-caret-position="360">
+              <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="class#PolyTerm#0;class#DensePoly#0" />
-                <element signature="e#1007#1008#0" expanded="true" />
-                <element signature="e#1045#1046#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/IntBag.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/DensePoly.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+            <state relative-caret-position="180">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,13 +102,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/Poly.java">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-              <folding>
-                <element signature="method#toString#0;class#Poly#0" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -152,11 +148,16 @@
         <option value="$PROJECT_DIR$/src/com/adt/DensePoly.java" />
         <option value="$PROJECT_DIR$/src/com/adt/Poly.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/adt/Poly.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/adt/DensePoly.java" />
-        <option value="$PROJECT_DIR$/Tests/com/adt/IntBagTest.java" />
-        <option value="$PROJECT_DIR$/Tests/com/adt/DensePolyTest.java" />
         <option value="$PROJECT_DIR$/Tests/com/adt/PolyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/adt/Poly.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/adt/Interfaces/PolynomialOperations.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/adt/DensePoly.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/adt/PolyTerm.java" />
+        <option value="$PROJECT_DIR$/Tests/com/adt/DensePolyTest.java" />
+        <option value="$PROJECT_DIR$/Tests/com/adt/PolyTermTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/adt/IntBag.java" />
+        <option value="$PROJECT_DIR$/Tests/com/adt/IntBagTest.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
       </list>
     </option>
   </component>
@@ -190,9 +191,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="797" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -202,8 +202,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -245,14 +245,12 @@
             </path>
             <path>
               <item name="Esercizi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esercizi" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
               <item name="Esercizi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esercizi" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
-              <item name="adt" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
             </path>
           </expand>
           <select />
@@ -264,7 +262,8 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543241892465" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543312905223" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="junit.framework.TestCase" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -294,23 +293,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PolyTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.esercizi.Main" />
-      <module name="Esercizi" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Poly" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.adt.Poly" />
+  <component name="RunManager" selected="Application.DensePoly">
+    <configuration name="DensePoly" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.adt.DensePoly" />
       <module name="Esercizi" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.adt.exceptions.*" />
+          <option name="PATTERN" value="com.adt.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -318,7 +307,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DensePolyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntBagTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Esercizi" />
       <extension name="coverage">
         <pattern>
@@ -327,7 +316,39 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.adt" />
-      <option name="MAIN_CLASS_NAME" value="com.adt.DensePolyTest" />
+      <option name="MAIN_CLASS_NAME" value="com.adt.IntBagTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntBagTest.remove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Esercizi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.adt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.adt" />
+      <option name="MAIN_CLASS_NAME" value="com.adt.IntBagTest" />
+      <option name="METHOD_NAME" value="remove" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntBagTest.sameValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Esercizi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.adt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.adt" />
+      <option name="MAIN_CLASS_NAME" value="com.adt.IntBagTest" />
+      <option name="METHOD_NAME" value="sameValue" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -347,17 +368,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Poly" />
-      <item itemvalue="JUnit.DensePolyTest" />
       <item itemvalue="JUnit.PolyTest" />
+      <item itemvalue="Application.DensePoly" />
+      <item itemvalue="JUnit.IntBagTest" />
+      <item itemvalue="JUnit.IntBagTest.remove" />
+      <item itemvalue="JUnit.IntBagTest.sameValue" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DensePoly" />
+        <item itemvalue="JUnit.IntBagTest.sameValue" />
+        <item itemvalue="JUnit.IntBagTest" />
+        <item itemvalue="JUnit.IntBagTest.remove" />
         <item itemvalue="JUnit.PolyTest" />
-        <item itemvalue="JUnit.DensePolyTest" />
-        <item itemvalue="Application.Poly" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -375,12 +398,32 @@
     <history-entry file="PolyTest - 2018.11.26 at 15h 18m 16s.xml">
       <configuration name="PolyTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="PolyTest - 2018.11.27 at 08h 16m 32s.xml">
+      <configuration name="PolyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntBagTest - 2018.11.27 at 08h 23m 28s.xml">
+      <configuration name="IntBagTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntBagTest - 2018.11.27 at 08h 27m 03s.xml">
+      <configuration name="IntBagTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntBagTest_remove - 2018.11.27 at 08h 27m 10s.xml">
+      <configuration name="IntBagTest.remove" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntBagTest - 2018.11.27 at 10h 35m 07s.xml">
+      <configuration name="IntBagTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntBagTest - 2018.11.27 at 10h 43m 08s.xml">
+      <configuration name="IntBagTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntBagTest_sameValue - 2018.11.27 at 10h 45m 43s.xml">
+      <configuration name="IntBagTest.sameValue" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1795422" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18025751" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -405,58 +448,15 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.3297568" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.3297568" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/esercizi/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/adt/VectorPolyStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#489#490#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#567#568#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#1076#1077#0" expanded="true" />
-            <element signature="e#1139#1140#0" expanded="true" />
-            <element signature="e#1167#1168#0" expanded="true" />
-            <element signature="e#1230#1231#0" expanded="true" />
-            <element signature="e#1258#1259#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-            <element signature="e#1355#1356#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/esercizi/Main.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/adt/VectorPolyStorage.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/exceptions/EmptyIntBagException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -471,40 +471,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/Interfaces/PolynomialOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/DensePoly.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#PolyTerm#0;class#DensePoly#0" />
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/IntBag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -515,30 +485,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/Interfaces/PolynomialOperations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/Poly.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1605">
+          <caret line="112" column="7" lean-forward="true" selection-start-line="112" selection-start-column="7" selection-end-line="112" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/com/adt/DensePolyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/com/adt/PolyTermTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/PolyTerm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/com/adt/IntBagTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="753">
+          <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/IntBag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/com/adt/DensePolyTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/DensePoly.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="180">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/Poly.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-          <folding>
-            <element signature="method#toString#0;class#Poly#0" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

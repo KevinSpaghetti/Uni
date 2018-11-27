@@ -40,4 +40,5 @@ public interface PolynomialOperations<T>{
      * @return another polynomial with the signs flipped
      */
     T minus();
+
 }
