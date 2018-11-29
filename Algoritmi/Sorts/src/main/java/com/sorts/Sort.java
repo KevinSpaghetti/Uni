@@ -1,5 +1,10 @@
 package com.sorts;
 
+import sun.nio.ch.Util;
+
+import java.util.Collections;
+import java.util.Vector;
+
 public class Sort{
 
     public static void bubble(Integer[] array){
@@ -148,7 +153,7 @@ public class Sort{
         }
     }
 
-    private static Integer partition(Integer[] array, Integer p, Integer q){
+    public static Integer partition(Integer[] array, Integer p, Integer q){
         Integer x = array[q];
         Integer i = p - 1;
         for (int j = p; j < q; j++) {
@@ -164,4 +169,77 @@ public class Sort{
         array[q] = a;
         return i + 1;
     }
+
+    /** Elements in the array must be in the range 0-range */
+    public static void counting(Integer[] array, Integer range){
+        Integer[] elementsCount = new Integer[range];
+        for (int i = 0; i < range; i++) {
+            elementsCount[i]  = 0;
+        }
+        for (int i = 0; i < array.length; i++) {
+            elementsCount[array[i]] += 1;
+        }
+        for (int i = 1; i < range; i++) {
+            elementsCount[i] = elementsCount[i] + elementsCount[i - 1];
+        }
+        Integer[] output = new Integer[array.length];
+        for (int i = array.length - 1; i >= 0; i--) {
+            output[elementsCount[array[i]] - 1] = array[i];
+            elementsCount[array[i]] -= 1;
+        }
+        for (int i = 0; i < array.length; i++) {
+            array[i] = output[i];
+        }
+    }
+
+    public static void radix(Integer[] array, Integer range){
+        Integer digits = Utils.max(array);
+        for (int i = 1; digits/i > 0; i *= 10) {
+            countingDigit(array, range, i);
+        }
+    }
+
+    /** Counting sort only evaluating one digit */
+    private static void countingDigit(Integer[] array, Integer range, Integer digitPosition){
+        Integer[] elementsCount = new Integer[range];
+        for (int i = 0; i < range; i++) {
+            elementsCount[i] = 0;
+        }
+        for (int i = 0; i < array.length; i++) {
+            elementsCount[(array[i]/digitPosition)%10] += 1;
+        }
+        for (int i = 1; i < range; i++) {
+            elementsCount[i] = elementsCount[i] + elementsCount[i - 1];
+        }
+        Integer[] output = new Integer[array.length];
+        for (int i = array.length - 1; i >= 0; i--) {
+            output[elementsCount[(array[i]/digitPosition)%10] - 1] = array[i];
+            elementsCount[(array[i]/digitPosition)%10] -= 1;
+        }
+        for (int i = 0; i < array.length; i++) {
+            array[i] = output[i];
+        }
+    }
+
+    public static void bucket(Double[] array, Integer bucketNumber){
+        Vector<Double>[] buckets = new Vector[bucketNumber];
+        for (int i = 0; i < bucketNumber; i++) {
+            buckets[i] = new Vector<Double>();
+        }
+        for (int i = 0; i < array.length; i++) {
+            Integer bucketIndex = (int)(bucketNumber * array[i]);
+            buckets[bucketIndex].add(array[i]);
+        }
+        for (int i = 0; i < bucketNumber; i++) {
+            Collections.sort(buckets[i]);
+        }
+        Integer index = 0;
+        for (int i = 0; i < bucketNumber; i++) {
+            for (int j = 0; j < buckets[i].size(); j++) {
+                array[index++] = buckets[i].elementAt(j);
+            }
+        }
+        Utils.printArray(array);
+    }
+
 }

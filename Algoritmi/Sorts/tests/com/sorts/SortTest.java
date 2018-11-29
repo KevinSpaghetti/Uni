@@ -73,4 +73,42 @@ class SortTest {
 
         assertArrayEquals(target, array, "Unordered array");
     }
+
+    @Test
+    void counting(){
+        final Integer range = 100;
+
+        Integer[] array = Utils.randomArrayOfSizeBounded(1000, 0, range);
+        Integer[] target = array.clone();
+
+        Sort.counting(array, range);
+        Arrays.sort(target);
+
+        assertArrayEquals(target, array, "Unordered array");
+    }
+
+    @Test
+    void radix(){
+        final Integer range = 100;
+
+        Integer[] array = Utils.randomArrayOfSizeBounded(1000, 0, range);
+        Integer[] target = array.clone();
+
+        Sort.radix(array, range);
+        Arrays.sort(target);
+
+        assertArrayEquals(target, array, "Unordered array");
+    }
+
+    @Test
+    void bucket(){
+        Integer arraySize = 1000;
+        Double[] array = Utils.randomArrayOfSizeConstrained(arraySize, 0.0 , 1.0);
+        Double[] target = array.clone();
+
+        Sort.bucket(array, arraySize);
+        Arrays.sort(target);
+
+        assertArrayEquals(target, array, "Unordered array");
+    }
 }
