@@ -23,7 +23,7 @@ class PolyTerm {
      *                 will be made
      */
     PolyTerm(PolyTerm original){
-        assert(original != null);
+        assert(original != null) : "copy source CAN'T be null";
         this.coefficent = original.coefficent;
         this.exponent = original.exponent;
     }

@@ -38,6 +38,7 @@ public class DensePoly implements PolynomialOperations<DensePoly> {
      * @param original the source of the copy
      */
     public DensePoly(DensePoly original){
+        assert (original != null) : "copy source CAN'T be null";
         this.terms = new TreeSet<>();
         for (PolyTerm t: original.terms){
             PolyTerm l = new PolyTerm(t.coefficent, t.exponent);
@@ -51,7 +52,7 @@ public class DensePoly implements PolynomialOperations<DensePoly> {
      * (0) if it is the empty polynomial
      */
     public Integer degree(){
-        assert(this.terms != null);
+        assert (this.terms != null) : "Inconsistent state";
 
         if(this.terms.isEmpty()){ return 0; }
         Integer highest = 0;
@@ -67,8 +68,8 @@ public class DensePoly implements PolynomialOperations<DensePoly> {
      * @return the coefficent of the term that has {@code n} exponent
      */
     public Integer coefficent(Integer n){
-        assert(this.terms != null);
-        assert(n != null);
+        assert (this.terms != null) : "Inconsistent state";
+        assert (n != null) : "n CAN'T be null";
 
         for (PolyTerm t: this.terms){
             if(t.exponent == n) { return t.coefficent; }
@@ -82,6 +83,7 @@ public class DensePoly implements PolynomialOperations<DensePoly> {
      * @return a new polynomial by adding element
      */
     public DensePoly add(DensePoly element){
+        assert (element != null) : "element CAN'T be null";
         DensePoly result = new DensePoly();
         Integer highestDegree = Math.max(this.degree(), element.degree());
         DensePoly highestPoly;
@@ -119,6 +121,7 @@ public class DensePoly implements PolynomialOperations<DensePoly> {
      * @return a polynomial that is this*p
      */
     public DensePoly multiply(DensePoly element){
+        assert (element != null) : "element CAN'T be null";
         DensePoly result = new DensePoly();
         for (PolyTerm t: this.terms){
             for (PolyTerm a: element.terms){
@@ -180,6 +183,7 @@ public class DensePoly implements PolynomialOperations<DensePoly> {
      * @return the multiplied polynomial
      */
     public DensePoly multiply(Integer scalar){
+        assert (scalar != null) : "scalar CAN'T be null";
         DensePoly result = new DensePoly();
         for (PolyTerm t: this.terms){
             PolyTerm p = new PolyTerm(scalar*t.coefficent, t.exponent);
@@ -190,25 +194,12 @@ public class DensePoly implements PolynomialOperations<DensePoly> {
 
     @Override
     public String toString(){
-        assert (this.terms != null);
+        assert (terms != null) : "inconsistent state";
         StringBuffer result = new StringBuffer();
         for (PolyTerm t: this.terms){
             String formattedPoly = String.format("+%d*x^%d", t.coefficent, t.exponent);
             result.append(formattedPoly);
         }
         return result.toString();
-    }
-
-    public static void main(String[] args){
-        try {
-            Poly nomial = new Poly(2, 5);
-            Poly l = new Poly(2, 1);
-            Poly ml = new Poly(7,2);
-            System.out.println(nomial.multiply(l));
-            System.out.println(nomial.multiply(5));
-            System.out.println(l.add(ml).multiply(nomial));
-        }catch (NegativeExponentException e){
-
-        }
     }
 }

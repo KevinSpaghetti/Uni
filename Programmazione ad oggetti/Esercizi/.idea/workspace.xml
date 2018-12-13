@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="678dcfdc-e26d-46ef-8727-29f991551beb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tests/com/adt/PolyTermTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/adt/PolyTerm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Esercizi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Esercizi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/com/adt/DensePolyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/com/adt/DensePolyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/com/adt/IntBagTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/com/adt/IntBagTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/com/adt/PolyTermTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adt/DensePoly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adt/DensePoly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adt/Interfaces/PolynomialOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adt/Interfaces/PolynomialOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adt/IntBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adt/IntBag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adt/Poly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adt/Poly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/DensePoly.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adt/DensePoly.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/IntBag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adt/IntBag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/Interfaces/PolynomialOperations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adt/Interfaces/PolynomialOperations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/Poly.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adt/Poly.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/exceptions/EmptyIntBagException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adt/exceptions/EmptyIntBagException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/exceptions/NegativeExponentException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adt/exceptions/NegativeExponentException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adt/DensePolyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/adt/DensePolyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adt/IntBagTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/adt/IntBagTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adt/PolyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/adt/PolyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adt/PolyTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adt/PolyTerm.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,7 +22,8 @@
     <session id="-2065005457">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.107" value="1" />
           <entry key="project.open.time.110" value="1" />
           <entry key="project.open.time.127" value="1" />
           <entry key="project.open.time.2" value="1" />
@@ -45,31 +33,31 @@
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.73" value="1" />
           <entry key="project.open.time.82" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="35" />
+          <entry key="java" value="44" />
           <entry key="xml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="34" />
+          <entry key="JAVA" value="43" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="13649" />
+          <entry key="java" value="14473" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13640" />
+          <entry key="JAVA" value="14464" />
           <entry key="Scratch" value="9" />
           <entry key="XML" value="1" />
         </counts>
@@ -78,35 +66,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/IntBag.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+            <state relative-caret-position="573">
+              <caret line="127" column="58" selection-start-line="127" selection-start-column="58" selection-end-line="127" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2408#2409#0" expanded="true" />
+                <element signature="e#2451#2452#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/DensePoly.java">
+        <entry file="file://$PROJECT_DIR$/Tests/com/adt/DensePolyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/Poly.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="480">
+              <caret line="199" column="59" selection-start-line="199" selection-start-column="59" selection-end-line="199" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/PolyTerm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -127,6 +123,7 @@
       <find>Poly</find>
       <find>Poly.PolyTerm</find>
       <find>\</find>
+      <find>assert</find>
     </findStrings>
     <replaceStrings>
       <replace>DensePoly</replace>
@@ -150,15 +147,15 @@
         <option value="$PROJECT_DIR$/src/com/adt/Poly.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Tests/com/adt/PolyTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/adt/Poly.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/adt/Interfaces/PolynomialOperations.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/adt/DensePoly.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/adt/PolyTerm.java" />
-        <option value="$PROJECT_DIR$/Tests/com/adt/DensePolyTest.java" />
-        <option value="$PROJECT_DIR$/Tests/com/adt/PolyTermTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/adt/IntBag.java" />
         <option value="$PROJECT_DIR$/Tests/com/adt/IntBagTest.java" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/adt/IntBag.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/adt/DensePoly.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/adt/Poly.java" />
+        <option value="$PROJECT_DIR$/Tests/com/adt/DensePolyTest.java" />
+        <option value="$PROJECT_DIR$/Tests/com/adt/PolyTermTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/adt/PolyTerm.java" />
       </list>
     </option>
   </component>
@@ -203,8 +200,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,6 +241,17 @@
             </path>
             <path>
               <item name="Esercizi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esercizi" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esercizi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esercizi" type="462c0819:PsiDirectoryNode" />
+              <item name="Tests" type="462c0819:PsiDirectoryNode" />
+              <item name="adt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Esercizi" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
@@ -257,6 +263,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -294,20 +302,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DensePoly">
-    <configuration name="DensePoly" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.adt.DensePoly" />
-      <module name="Esercizi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.adt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.PolyTest">
     <configuration name="IntBagTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Esercizi" />
       <extension name="coverage">
@@ -318,38 +313,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.adt" />
       <option name="MAIN_CLASS_NAME" value="com.adt.IntBagTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IntBagTest.remove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Esercizi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.adt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.adt" />
-      <option name="MAIN_CLASS_NAME" value="com.adt.IntBagTest" />
-      <option name="METHOD_NAME" value="remove" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IntBagTest.sameValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Esercizi" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.adt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.adt" />
-      <option name="MAIN_CLASS_NAME" value="com.adt.IntBagTest" />
-      <option name="METHOD_NAME" value="sameValue" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -370,18 +333,12 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.PolyTest" />
-      <item itemvalue="Application.DensePoly" />
       <item itemvalue="JUnit.IntBagTest" />
-      <item itemvalue="JUnit.IntBagTest.remove" />
-      <item itemvalue="JUnit.IntBagTest.sameValue" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DensePoly" />
-        <item itemvalue="JUnit.IntBagTest.sameValue" />
-        <item itemvalue="JUnit.IntBagTest" />
-        <item itemvalue="JUnit.IntBagTest.remove" />
         <item itemvalue="JUnit.PolyTest" />
+        <item itemvalue="JUnit.IntBagTest" />
       </list>
     </recent_temporary>
   </component>
@@ -396,12 +353,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PolyTest - 2018.11.26 at 15h 18m 16s.xml">
-      <configuration name="PolyTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PolyTest - 2018.11.27 at 08h 16m 32s.xml">
-      <configuration name="PolyTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="IntBagTest - 2018.11.27 at 08h 23m 28s.xml">
       <configuration name="IntBagTest" configurationId="JUnit" />
     </history-entry>
@@ -420,12 +371,24 @@
     <history-entry file="IntBagTest_sameValue - 2018.11.27 at 10h 45m 43s.xml">
       <configuration name="IntBagTest.sameValue" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="IntBagTest - 2018.12.03 at 08h 17m 39s.xml">
+      <configuration name="IntBagTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PolyTest - 2018.12.03 at 08h 18m 10s.xml">
+      <configuration name="PolyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PolyTest - 2018.12.03 at 08h 19m 10s.xml">
+      <configuration name="PolyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PolyTest - 2018.12.03 at 08h 19m 17s.xml">
+      <configuration name="PolyTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18240343" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18454936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -480,13 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/com/adt/PolyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/Interfaces/PolynomialOperations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -494,24 +450,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/Poly.java">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="112" column="7" lean-forward="true" selection-start-line="112" selection-start-column="7" selection-end-line="112" selection-end-column="7" />
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/com/adt/DensePolyTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/DensePoly.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="2880">
+          <caret line="196" column="54" selection-start-line="196" selection-start-column="54" selection-end-line="196" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/com/adt/PolyTermTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/com/adt/IntBagTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/com/adt/PolyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -522,37 +495,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/com/adt/IntBagTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/Poly.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="77" column="41" selection-start-line="77" selection-start-column="41" selection-end-line="77" selection-end-column="41" />
+        <state relative-caret-position="480">
+          <caret line="199" column="59" selection-start-line="199" selection-start-column="59" selection-end-line="199" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/com/adt/DensePolyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/IntBag.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        <state relative-caret-position="573">
+          <caret line="127" column="58" selection-start-line="127" selection-start-column="58" selection-end-line="127" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2408#2409#0" expanded="true" />
+            <element signature="e#2451#2452#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/adt/DensePoly.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>

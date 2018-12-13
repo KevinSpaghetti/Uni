@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fe7cffad-8bab-4d71-a47e-5ea3e63ef1f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/com/dst/ListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/com/dst/QueueTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/com/dst/StackTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dst/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dst/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dst/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algoritmi/Sorts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algoritmi/Sorts/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Esercizi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Esercizi/Tests/com/adt/DensePolyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/Tests/com/adt/DensePolyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Esercizi/Tests/com/adt/PolyTermTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Esercizi/src/main/java/com/adt/DensePoly.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/src/main/java/com/adt/DensePoly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Esercizi/src/main/java/com/adt/IntBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/src/main/java/com/adt/IntBag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Esercizi/src/main/java/com/adt/Poly.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/src/main/java/com/adt/Poly.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Esercizi/src/main/java/com/adt/PolyTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/src/main/java/com/adt/PolyTerm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Esercizi/target/classes/com/adt/DensePoly.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/target/classes/com/adt/DensePoly.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Esercizi/target/classes/com/adt/IntBag.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/target/classes/com/adt/IntBag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Esercizi/target/classes/com/adt/Poly.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/target/classes/com/adt/Poly.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Esercizi/target/test-classes/com/adt/DensePolyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/target/test-classes/com/adt/DensePolyTest.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-233860494">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.76" value="1" />
+          <entry key="project.open.time.87" value="1" />
+          <entry key="project.open.time.89" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="2" />
+          <entry key="java" value="16" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="16" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="6223" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="6223" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dst/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/dst/List.java" />
+        <option value="$PROJECT_DIR$/Tests/main/java/com/dst/ListTest.java" />
+        <option value="$PROJECT_DIR$/src/com/dst/Stack.java" />
+        <option value="$PROJECT_DIR$/src/com/dst/List.java" />
+        <option value="$PROJECT_DIR$/Tests/com/dst/StackTest.java" />
+        <option value="$PROJECT_DIR$/Tests/com/dst/QueueTest.java" />
+        <option value="$PROJECT_DIR$/src/com/dst/Node.java" />
+        <option value="$PROJECT_DIR$/src/com/dst/Queue.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DataStructures" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dst" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544690149778" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.dst" />
+      <recent name="main.java.com.dst" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.dst" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="com.dst" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Queue">
+    <configuration name="List" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dst.List" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dst.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Queue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dst.Queue" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dst.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Stack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.dst.Stack" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dst.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QueueTest.queue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dst.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dst" />
+      <option name="MAIN_CLASS_NAME" value="com.dst.QueueTest" />
+      <option name="METHOD_NAME" value="queue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StackTest.stack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dst.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dst" />
+      <option name="MAIN_CLASS_NAME" value="com.dst.StackTest" />
+      <option name="METHOD_NAME" value="stack" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.List" />
+      <item itemvalue="Application.Stack" />
+      <item itemvalue="JUnit.StackTest.stack" />
+      <item itemvalue="Application.Queue" />
+      <item itemvalue="JUnit.QueueTest.queue" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Queue" />
+        <item itemvalue="JUnit.QueueTest.queue" />
+        <item itemvalue="JUnit.StackTest.stack" />
+        <item itemvalue="Application.List" />
+        <item itemvalue="Application.Stack" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fe7cffad-8bab-4d71-a47e-5ea3e63ef1f8" name="Default Changelist" comment="" />
+      <created>1544166592622</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544166592622</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="StackTest_stack - 2018.12.13 at 08h 36m 29s.xml">
+      <configuration name="StackTest.stack" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StackTest_stack - 2018.12.13 at 08h 38m 22s.xml">
+      <configuration name="StackTest.stack" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StackTest_stack - 2018.12.13 at 08h 38m 27s.xml">
+      <configuration name="StackTest.stack" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StackTest_stack - 2018.12.13 at 08h 40m 57s.xml">
+      <configuration name="StackTest.stack" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StackTest_stack - 2018.12.13 at 08h 41m 15s.xml">
+      <configuration name="StackTest.stack" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StackTest_stack - 2018.12.13 at 08h 43m 33s.xml">
+      <configuration name="StackTest.stack" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StackTest_stack - 2018.12.13 at 08h 43m 52s.xml">
+      <configuration name="StackTest.stack" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StackTest_stack - 2018.12.13 at 09h 08m 15s.xml">
+      <configuration name="StackTest.stack" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QueueTest_queue - 2018.12.13 at 09h 34m 09s.xml">
+      <configuration name="QueueTest.queue" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QueueTest_queue - 2018.12.13 at 09h 35m 33s.xml">
+      <configuration name="QueueTest.queue" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32907802" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32907802" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dst/Main.java" />
+    <entry file="file://$PROJECT_DIR$/Tests/com/dst/ListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/junit-platform-commons-1.3.2.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="248" selection-start-line="248" selection-end-line="248" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/com/dst/StackTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="27" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/com/dst/QueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dst/Node.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dst/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+          <folding>
+            <element signature="method#enqueue#0;class#Queue#0" />
+            <element signature="method#size#0;class#Queue#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dst/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="69" column="19" lean-forward="true" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+          <folding>
+            <element signature="e#95#96#0" expanded="true" />
+            <element signature="e#122#123#0" expanded="true" />
+            <element signature="method#size#0;class#Stack#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dst/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+          <folding>
+            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="method#append#0;class#List#0" />
+            <element signature="method#elementAtIndex#0;class#List#0" />
+            <element signature="method#changeElementAtIndex#0;class#List#0" />
+            <element signature="method#addElementAtIndex#0;class#List#0" />
+            <element signature="method#toString#0;class#List#0" />
+            <element signature="method#main#0;class#List#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>DataStructures</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

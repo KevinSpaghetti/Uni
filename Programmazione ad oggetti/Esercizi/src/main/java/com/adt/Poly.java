@@ -56,7 +56,7 @@ public class Poly implements PolynomialOperations<Poly> {
      * (0) if it is the empty polynomial
      */
     public Integer degree(){
-        assert(this.terms != null);
+        assert (this.terms != null) : "inconsistent state";
 
         if(this.terms.isEmpty()){ return 0; }
         Integer highest = 0;
@@ -72,8 +72,8 @@ public class Poly implements PolynomialOperations<Poly> {
      * @return the coefficent of the term that has {@code n} exponent
      */
     public Integer coefficent(Integer n){
-        assert(this.terms != null);
-        assert(n != null);
+        assert(this.terms != null) : "inconsistent state";
+        assert(n != null) : "n CAN'T be null";
 
         for (PolyTerm t: this.terms){
             if(t.exponent == n) { return t.coefficent; }
@@ -124,6 +124,7 @@ public class Poly implements PolynomialOperations<Poly> {
      * @return a polynomial that is this*p
      */
     public Poly multiply(Poly element){
+        assert (element != null) : "element CAN'T be null";
         Poly result = new Poly();
         for (PolyTerm t: this.terms){
             for (PolyTerm a: element.terms){
@@ -185,6 +186,7 @@ public class Poly implements PolynomialOperations<Poly> {
      * @return the multiplied polynomial
      */
     public Poly multiply(Integer scalar){
+        assert (scalar != null) : "scalar CAN'T be null";
         Poly result = new Poly();
         for (PolyTerm t: this.terms){
             PolyTerm p = new PolyTerm(scalar*t.coefficent, t.exponent);
@@ -195,7 +197,7 @@ public class Poly implements PolynomialOperations<Poly> {
 
     @Override
     public String toString(){
-        assert (this.terms != null);
+        assert (this.terms != null) : "inconsistent state";
         StringBuffer result = new StringBuffer();
         for (PolyTerm t: this.terms){
             String formattedPoly = String.format("+%d*x^%d", t.coefficent, t.exponent);
@@ -204,16 +206,4 @@ public class Poly implements PolynomialOperations<Poly> {
         return result.toString();
     }
 
-    public static void main(String[] args){
-        try {
-            Poly nomial = new Poly(2, 5);
-            Poly l = new Poly(2, 1);
-            Poly ml = new Poly(7,2);
-            System.out.println(nomial.multiply(l));
-            System.out.println(nomial.multiply(5));
-            System.out.println(l.add(ml).multiply(nomial));
-        }catch (NegativeExponentException e){
-
-        }
-    }
 }

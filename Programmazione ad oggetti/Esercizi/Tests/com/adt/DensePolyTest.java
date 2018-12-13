@@ -9,8 +9,6 @@ class DensePolyTest {
     @Test
     void degree() {
 
-
-
     }
 
     @Test

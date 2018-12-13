@@ -28,7 +28,7 @@ public class IntBag {
      * @param array array of int
      */
     public IntBag(int[] array){
-        assert(array != null);
+        assert (array != null) : "Array can be empty but CAN'T be null";
         this.elements = new Vector<>();
         for (int i = 0; i < array.length; i++) {
             this.elements.add(array[i]);
@@ -41,7 +41,7 @@ public class IntBag {
      * @param original A non null instance of IntBag
      */
     public IntBag(IntBag original){
-        assert(original != null);
+        assert (original != null) : "copy source CAN'T be null";
         this.elements = (Vector<Integer>) original.elements.clone();
     }
 
@@ -50,7 +50,7 @@ public class IntBag {
      * @param element element to be appended to the IntBag
      */
     public void insert(Integer element){
-        assert(element != null);
+        assert (element != null) : "Integer can be 0 but NOT null";
         this.elements.add(element);
     }
 
@@ -61,6 +61,7 @@ public class IntBag {
      * false otherwise
      */
     public boolean remove(Integer target){
+        assert (target != null) : "element CAN'T be null";
         boolean result = this.elements.remove(target);
         return result;
     }
@@ -72,7 +73,7 @@ public class IntBag {
      * false otherwise
      */
     public boolean contains(Integer element){
-        assert(element != null);
+        assert (element != null) : "element CAN'T be null";
         boolean result = this.elements.contains(element);
         return result;
     }
@@ -124,7 +125,7 @@ public class IntBag {
      * false otherwise
      */
     public boolean sameValue(IntBag other){
-        assert(other != null);
+        assert (other != null) : "comparison target CAN'T be null";
         Collections.sort(this.elements);
         Collections.sort(other.elements);
         boolean result = this.elements.equals(other.elements);
