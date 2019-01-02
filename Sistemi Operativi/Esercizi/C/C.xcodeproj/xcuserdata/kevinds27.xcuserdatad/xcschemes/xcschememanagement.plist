@@ -14,10 +14,10 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
-		<key>I/O.xcscheme_^#shared#^_</key>
+		<key>IO.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>10</integer>
 		</dict>
 		<key>Lists.xcscheme_^#shared#^_</key>
 		<dict>
@@ -37,12 +37,12 @@
 		<key>Pointers.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>9</integer>
+			<integer>8</integer>
 		</dict>
 		<key>Sockets Server.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>9</integer>
 		</dict>
 		<key>Sockets.xcscheme_^#shared#^_</key>
 		<dict>
@@ -83,6 +83,11 @@
 			<true/>
 		</dict>
 		<key>7439DECF21A73DBF0079F499</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7439DEF121A741310079F499</key>
 		<dict>
 			<key>primary</key>
 			<true/>

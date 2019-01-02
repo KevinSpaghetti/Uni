@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe7cffad-8bab-4d71-a47e-5ea3e63ef1f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/com/dst/ListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/com/dst/QueueTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/com/dst/StackTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dst/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dst/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dst/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Algoritmi/Sorts/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algoritmi/Sorts/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Esercizi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Esercizi/Tests/com/adt/DensePolyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/Tests/com/adt/DensePolyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Esercizi/Tests/com/adt/PolyTermTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Esercizi/src/main/java/com/adt/DensePoly.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/src/main/java/com/adt/DensePoly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Esercizi/src/main/java/com/adt/IntBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/src/main/java/com/adt/IntBag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Esercizi/src/main/java/com/adt/Poly.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/src/main/java/com/adt/Poly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Esercizi/src/main/java/com/adt/PolyTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/src/main/java/com/adt/PolyTerm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Esercizi/target/classes/com/adt/DensePoly.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/target/classes/com/adt/DensePoly.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Esercizi/target/classes/com/adt/IntBag.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/target/classes/com/adt/IntBag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Esercizi/target/classes/com/adt/Poly.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/target/classes/com/adt/Poly.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Esercizi/target/test-classes/com/adt/DensePolyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercizi/target/test-classes/com/adt/DensePolyTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dst/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dst/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dst/Queue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dst/Queue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C.xcodeproj/project.xcworkspace/xcuserdata/kevinds27.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C.xcodeproj/project.xcworkspace/xcuserdata/kevinds27.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C.xcodeproj/xcuserdata/kevinds27.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/C.xcodeproj/xcuserdata/kevinds27.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/Threads/p_readfile.c" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sistemi Operativi/Esercizi/C/Threads/p_readfile.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,43 +21,60 @@
     <session id="-233860494">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.114" value="1" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.76" value="1" />
+          <entry key="project.open.time.80" value="1" />
           <entry key="project.open.time.87" value="1" />
           <entry key="project.open.time.89" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="java" value="16" />
+          <entry key="java" value="19" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="16" />
+          <entry key="JAVA" value="19" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6223" />
+          <entry key="java" value="6367" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6223" />
+          <entry key="JAVA" value="6367" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/dst/Stack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding>
+                <element signature="e#95#96#0" expanded="true" />
+                <element signature="e#122#123#0" expanded="true" />
+                <element signature="method#size#0;class#Stack#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -114,6 +116,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -136,15 +140,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544690149778" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544696398327" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
@@ -313,7 +315,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -374,13 +376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/com/dst/QueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dst/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -388,42 +383,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dst/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/com/dst/QueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dst/Queue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
-          <folding>
-            <element signature="method#enqueue#0;class#Queue#0" />
-            <element signature="method#size#0;class#Queue#0" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/dst/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="69" column="19" lean-forward="true" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+        <state relative-caret-position="169">
+          <caret line="23" column="5" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="e#95#96#0" expanded="true" />
             <element signature="e#122#123#0" expanded="true" />
             <element signature="method#size#0;class#Stack#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dst/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="78" column="13" selection-start-line="78" selection-start-column="13" selection-end-line="78" selection-end-column="13" />
-          <folding>
-            <element signature="e#142#143#0" expanded="true" />
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="method#append#0;class#List#0" />
-            <element signature="method#elementAtIndex#0;class#List#0" />
-            <element signature="method#changeElementAtIndex#0;class#List#0" />
-            <element signature="method#addElementAtIndex#0;class#List#0" />
-            <element signature="method#toString#0;class#List#0" />
-            <element signature="method#main#0;class#List#0" />
           </folding>
         </state>
       </provider>

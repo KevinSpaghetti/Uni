@@ -26,7 +26,6 @@ void p_readfile(int argc, char **argv){
     int thread_number = 10;
     pthread_t *threads = malloc(thread_number * sizeof(pthread_t));
     
-    
     int workload_per_thread = array_size / thread_number;
     printf("%d\n", workload_per_thread);
     for (int i = 0; (i * workload_per_thread) < array_size; i++) {

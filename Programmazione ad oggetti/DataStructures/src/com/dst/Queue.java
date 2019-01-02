@@ -36,7 +36,7 @@ public class Queue<T> {
         //with 2 nodes for the short circuiting of && operator
         //By using the & operator (that does not short circuit)
         //the following code would generate a NullPointerException
-        while(pointer.next != null && pointer.next.next != null){
+        while(pointer != null && pointer.next.next != null){
             pointer = pointer.next;
         }
         T value = pointer.next.value;

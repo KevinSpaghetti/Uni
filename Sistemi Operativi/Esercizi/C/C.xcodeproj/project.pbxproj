@@ -21,10 +21,10 @@
 		7439DED721A73DCA0079F499 /* sockets.c in Sources */ = {isa = PBXBuildFile; fileRef = 74D6CF2521A70B17009E0522 /* sockets.c */; };
 		7439DEDF21A741140079F499 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 7439DEDE21A741140079F499 /* main.c */; };
 		7439DEEA21A741200079F499 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 7439DEE921A741200079F499 /* main.c */; };
-		7439DEF521A741310079F499 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 7439DEF421A741310079F499 /* main.c */; };
 		7439DF0B21A74F700079F499 /* freadline.c in Sources */ = {isa = PBXBuildFile; fileRef = 7439DF0721A74F6F0079F499 /* freadline.c */; };
 		7439DF0C21A74F700079F499 /* upperserver.c in Sources */ = {isa = PBXBuildFile; fileRef = 7439DF0821A74F700079F499 /* upperserver.c */; };
 		7439DF0D21A74F700079F499 /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = 7439DF0921A74F700079F499 /* common.c */; };
+		743CEDF421C8D65000E9A353 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 743CEDF321C8D65000E9A353 /* main.c */; };
 		7475E2AC21AC4D340051E56B /* p_upperserver.c in Sources */ = {isa = PBXBuildFile; fileRef = 7475E2AA21AC4D340051E56B /* p_upperserver.c */; };
 		7475E2AF21AC4D9F0051E56B /* p_readfile.c in Sources */ = {isa = PBXBuildFile; fileRef = 7475E2AD21AC4D9F0051E56B /* p_readfile.c */; };
 		74BE2CF421AC3CC500A26D09 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 74BE2CF321AC3CC500A26D09 /* main.c */; };
@@ -103,7 +103,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		7439DEF021A741310079F499 /* CopyFiles */ = {
+		7439DEFB21A74F580079F499 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -112,7 +112,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		7439DEFB21A74F580079F499 /* CopyFiles */ = {
+		743CEDE821C8D58C00E9A353 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -158,14 +158,14 @@
 		7439DEDE21A741140079F499 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		7439DEE721A741200079F499 /* Pointers */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Pointers; sourceTree = BUILT_PRODUCTS_DIR; };
 		7439DEE921A741200079F499 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		7439DEF221A741310079F499 /* I/O */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = I/O; sourceTree = BUILT_PRODUCTS_DIR; };
-		7439DEF421A741310079F499 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		7439DEFD21A74F580079F499 /* Sockets Server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Sockets Server"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7439DF0421A74F6F0079F499 /* common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		7439DF0521A74F6F0079F499 /* freadline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = freadline.h; sourceTree = "<group>"; };
 		7439DF0721A74F6F0079F499 /* freadline.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = freadline.c; sourceTree = "<group>"; };
 		7439DF0821A74F700079F499 /* upperserver.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = upperserver.c; sourceTree = "<group>"; };
 		7439DF0921A74F700079F499 /* common.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = common.c; sourceTree = "<group>"; };
+		743CEDEA21C8D58C00E9A353 /* IO */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IO; sourceTree = BUILT_PRODUCTS_DIR; };
+		743CEDF321C8D65000E9A353 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		7475E2AA21AC4D340051E56B /* p_upperserver.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = p_upperserver.c; sourceTree = "<group>"; };
 		7475E2AB21AC4D340051E56B /* p_upperserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = p_upperserver.h; sourceTree = "<group>"; };
 		7475E2AD21AC4D9F0051E56B /* p_readfile.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = p_readfile.c; sourceTree = "<group>"; };
@@ -244,14 +244,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7439DEEF21A741310079F499 /* Frameworks */ = {
+		7439DEFA21A74F580079F499 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7439DEFA21A74F580079F499 /* Frameworks */ = {
+		743CEDE721C8D58C00E9A353 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -286,8 +286,8 @@
 				7439DED121A73DBF0079F499 /* Sockets */,
 				7439DEDD21A741140079F499 /* Functions */,
 				7439DEE821A741200079F499 /* Pointers */,
-				7439DEF321A741310079F499 /* I/O */,
 				74BE2CF221AC3CC500A26D09 /* Threads */,
+				743CEDEB21C8D58C00E9A353 /* IO */,
 				0A3A5D78217E070C008559CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -303,10 +303,10 @@
 				7439DED021A73DBF0079F499 /* Sockets */,
 				7439DEDC21A741140079F499 /* Functions */,
 				7439DEE721A741200079F499 /* Pointers */,
-				7439DEF221A741310079F499 /* I/O */,
 				7439DEFD21A74F580079F499 /* Sockets Server */,
 				74BE2CE521AC3C9B00A26D09 /* Thread */,
 				74BE2CF121AC3CC500A26D09 /* Threads */,
+				743CEDEA21C8D58C00E9A353 /* IO */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -388,14 +388,6 @@
 			path = Pointers;
 			sourceTree = "<group>";
 		};
-		7439DEF321A741310079F499 /* I/O */ = {
-			isa = PBXGroup;
-			children = (
-				7439DEF421A741310079F499 /* main.c */,
-			);
-			path = I/O;
-			sourceTree = "<group>";
-		};
 		7439DEFE21A74F580079F499 /* Sockets Server */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +398,14 @@
 				7439DF0821A74F700079F499 /* upperserver.c */,
 			);
 			path = "Sockets Server";
+			sourceTree = "<group>";
+		};
+		743CEDEB21C8D58C00E9A353 /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				743CEDF321C8D65000E9A353 /* main.c */,
+			);
+			path = IO;
 			sourceTree = "<group>";
 		};
 		74BE2CF221AC3CC500A26D09 /* Threads */ = {
@@ -559,23 +559,6 @@
 			productReference = 7439DEE721A741200079F499 /* Pointers */;
 			productType = "com.apple.product-type.tool";
 		};
-		7439DEF121A741310079F499 /* I/O */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7439DEF621A741310079F499 /* Build configuration list for PBXNativeTarget "I/O" */;
-			buildPhases = (
-				7439DEEE21A741310079F499 /* Sources */,
-				7439DEEF21A741310079F499 /* Frameworks */,
-				7439DEF021A741310079F499 /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = I/O;
-			productName = I/O;
-			productReference = 7439DEF221A741310079F499 /* I/O */;
-			productType = "com.apple.product-type.tool";
-		};
 		7439DEFC21A74F580079F499 /* Sockets Server */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7439DF0121A74F580079F499 /* Build configuration list for PBXNativeTarget "Sockets Server" */;
@@ -591,6 +574,23 @@
 			name = "Sockets Server";
 			productName = "Sockets Server";
 			productReference = 7439DEFD21A74F580079F499 /* Sockets Server */;
+			productType = "com.apple.product-type.tool";
+		};
+		743CEDE921C8D58C00E9A353 /* IO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 743CEDEE21C8D58C00E9A353 /* Build configuration list for PBXNativeTarget "IO" */;
+			buildPhases = (
+				743CEDE621C8D58C00E9A353 /* Sources */,
+				743CEDE721C8D58C00E9A353 /* Frameworks */,
+				743CEDE821C8D58C00E9A353 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IO;
+			productName = IO;
+			productReference = 743CEDEA21C8D58C00E9A353 /* IO */;
 			productType = "com.apple.product-type.tool";
 		};
 		74BE2CE421AC3C9B00A26D09 /* Thread */ = {
@@ -661,10 +661,10 @@
 					7439DEE621A741200079F499 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					7439DEF121A741310079F499 = {
+					7439DEFC21A74F580079F499 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					7439DEFC21A74F580079F499 = {
+					743CEDE921C8D58C00E9A353 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 					74BE2CE421AC3C9B00A26D09 = {
@@ -695,10 +695,10 @@
 				7439DECF21A73DBF0079F499 /* Sockets */,
 				7439DEDB21A741140079F499 /* Functions */,
 				7439DEE621A741200079F499 /* Pointers */,
-				7439DEF121A741310079F499 /* I/O */,
 				7439DEFC21A74F580079F499 /* Sockets Server */,
 				74BE2CE421AC3C9B00A26D09 /* Thread */,
 				74BE2CF021AC3CC500A26D09 /* Threads */,
+				743CEDE921C8D58C00E9A353 /* IO */,
 			);
 		};
 /* End PBXProject section */
@@ -774,14 +774,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7439DEEE21A741310079F499 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7439DEF521A741310079F499 /* main.c in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7439DEF921A74F580079F499 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -789,6 +781,14 @@
 				7439DF0B21A74F700079F499 /* freadline.c in Sources */,
 				7439DF0D21A74F700079F499 /* common.c in Sources */,
 				7439DF0C21A74F700079F499 /* upperserver.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		743CEDE621C8D58C00E9A353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				743CEDF421C8D65000E9A353 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1089,27 +1089,6 @@
 			};
 			name = Release;
 		};
-		7439DEF721A741310079F499 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 239XMEBS9L;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		7439DEF821A741310079F499 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 239XMEBS9L;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		7439DF0221A74F580079F499 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1122,6 +1101,27 @@
 			name = Debug;
 		};
 		7439DF0321A74F580079F499 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 239XMEBS9L;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		743CEDEF21C8D58C00E9A353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 239XMEBS9L;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		743CEDF021C8D58C00E9A353 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1263,20 +1263,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7439DEF621A741310079F499 /* Build configuration list for PBXNativeTarget "I/O" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7439DEF721A741310079F499 /* Debug */,
-				7439DEF821A741310079F499 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		7439DF0121A74F580079F499 /* Build configuration list for PBXNativeTarget "Sockets Server" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7439DF0221A74F580079F499 /* Debug */,
 				7439DF0321A74F580079F499 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		743CEDEE21C8D58C00E9A353 /* Build configuration list for PBXNativeTarget "IO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				743CEDEF21C8D58C00E9A353 /* Debug */,
+				743CEDF021C8D58C00E9A353 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
