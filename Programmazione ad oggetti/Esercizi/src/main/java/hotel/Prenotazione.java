@@ -1,0 +1,1 @@
+package hotel;import java.time.LocalDateTime;public interface Prenotazione {    LocalDateTime inizio();    LocalDateTime fine();}

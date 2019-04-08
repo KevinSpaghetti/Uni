@@ -20,8 +20,7 @@ public class Ufficio {
 
     private List<Offerta> offertePerFiltro(Predicate<Abitazione> filtro){
         List<Offerta> risultati = offerte.stream().filter(
-                    offerta -> filtro.test(offerta.abitazione
-                )
+                    offerta -> filtro.test(offerta.abitazione)
         ).collect(Collectors.toList());
         return risultati;
     }

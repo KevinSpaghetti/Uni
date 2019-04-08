@@ -1,0 +1,1 @@
+package concessionario;public abstract class Automobile {    public abstract double getPrezzo();}

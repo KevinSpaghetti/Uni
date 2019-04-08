@@ -40,15 +40,13 @@ public class Main {
             System.out.println("Prezzo Medio (2 Piani): " + ufficio.prezzoMedioPerFiltro(duePiano));
             System.out.println("Prezzo Medio (Appartamento numero 15 con 2 Piani): " + ufficio.prezzoMedioPerFiltro(isAppartamento));
         }catch(NoResultsException e){
-            System.out.println(e.userErrorMessage());
-            System.err.println(e.developerErrorMessage());
+            System.out.println(e.getMessage());
         }
 
         try {
             System.out.println("Abitazioni per filtro: \n" + ufficio.abitazioniPerFiltro(duePiano));
         }catch(NoResultsException e){
-            System.out.println(e.userErrorMessage());
-            System.err.println(e.developerErrorMessage());
+            System.out.println(e.getMessage());
         }
 
         Contattabile agenteImmobiliare = new AgenteImmobiliare("Jhon", "Wong", "0284561264");
