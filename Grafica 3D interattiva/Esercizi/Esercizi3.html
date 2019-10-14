@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Template</title>
+        <style> 
+            canvas{ 
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                bottom: 0%;
+                right: 0%;
+                margin: auto;
+            } 
+        
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+        <script src="libs/OBJLoader.js"></script>
+        
+    </head>
+    <body>
+        <script>
+            var scene = new THREE.Scene();
+            var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+
+            var renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            var vertices = [];
+            var faces = [];
+            //Ottaedro
+            vertices.push(new THREE.Vector3(1,0,0));
+            vertices.push(new THREE.Vector3(-1,0,0));
+            vertices.push(new THREE.Vector3(0,1,0));
+            vertices.push(new THREE.Vector3(0,-1,0));
+            vertices.push(new THREE.Vector3(0,0,1));
+            vertices.push(new THREE.Vector3(0,0,-1));
+
+            faces.push(new THREE.Face3(0,2,4));
+            faces.push(new THREE.Face3(0,4,3));
+            faces.push(new THREE.Face3(0,3,5));
+            faces.push(new THREE.Face3(0,5,2));
+            faces.push(new THREE.Face3(1,2,5));
+            faces.push(new THREE.Face3(1,5,3));
+            faces.push(new THREE.Face3(1,3,4));
+            faces.push(new THREE.Face3(1,4,2));
+
+            var octahedronGeo = new THREE.Geometry();
+            vertices.forEach(vertex => octahedronGeo.vertices.push(vertex));
+            faces.forEach(face => octahedronGeo.faces.push(face));
+            
+
+            function midpoint(a,b){
+                x = (a.x + b.x) / 2;
+                y = (a.y + b.y) / 2;
+                z = (a.z + b.z) / 2;
+                return new THREE.Vector3(x,y,z);
+            }
+
+            function normalize(vertex){
+                var x = vertex.x;
+                var y = vertex.y;
+                var z = vertex.z;
+                var mag = Math.sqrt(x*x + y*y + z*z);
+                x /= mag;
+                y /= mag;
+                z /= mag;
+                return new THREE.Vector3(x,y,z);
+            }
+
+            function tessellate(geometry, factor){
+                if(factor == 0) return geometry;
+                
+                var newGeo = new THREE.Geometry();
+                var vertices = geometry.vertices;
+                var faces = geometry.faces;
+
+                var new_faces = new Array();
+                faces.forEach(face => {
+                    //calcolo dei midpoint e aggiunta a vertex delle facce
+                    a = face.a;
+                    b = face.b;
+                    c = face.c;
+                    ab = midpoint(vertices[a], vertices[b]);
+                    bc = midpoint(vertices[b], vertices[c]);
+                    ca = midpoint(vertices[c], vertices[a]);
+                    vertices.push(ab);
+                    vertices.push(bc);
+                    vertices.push(ca);
+
+                    ab_index = vertices.indexOf(ab);
+                    bc_index = vertices.indexOf(bc);
+                    ca_index = vertices.indexOf(ca);
+
+                    new_faces.push(new THREE.Face3(ab_index,ca_index,bc_index));
+
+                    new_faces.push(new THREE.Face3(ab_index,ca_index,a));
+                    new_faces.push(new THREE.Face3(bc_index,ab_index,b));
+                    new_faces.push(new THREE.Face3(bc_index, ca_index, c));
+                    
+                    
+                });
+                vertices.forEach(vertex => {
+                    newGeo.vertices.push(normalize(vertex));
+                });
+                new_faces.forEach(face => {
+                    newGeo.faces.push(face);
+                });
+
+                return tessellate(newGeo, factor-1);
+            }
+
+            var geom = tessellate(octahedronGeo, 0);
+
+            var material = new THREE.MeshBasicMaterial({color: 0x00ff00, wireframe: true});
+            var mesh = new THREE.Mesh(geom, material);
+            scene.add(mesh);
+
+            camera.position.z = 5;
+            camera.position.y = 1;
+            camera.position.x = 0;
+
+            var tessellation_factor = 0;
+            var currentMesh = mesh;
+            var previousRot = currentMesh.rotation.y;
+
+            document.onkeydown = checkKey;
+            function checkKey(e) {
+                e = e || window.event;
+                if (e.keyCode == '39') {
+                    tessellation_factor++;
+                    tessellation_factor=Math.min(tessellation_factor, 4); 
+                    console.log(tessellation_factor);
+                    var geom = tessellate(octahedronGeo, tessellation_factor);
+                    var newMesh = new THREE.Mesh(geom, material);
+                    previousRot = currentMesh.rotation.y;
+                    scene.remove(currentMesh);
+                    currentMesh.geometry.dispose();
+                    currentMesh.material.dispose();
+                    currentMesh = undefined;
+                    scene.add(newMesh);
+                    currentMesh = newMesh;
+                    
+                }
+                else if (e.keyCode == '37') {
+                    tessellation_factor--;
+                    tessellation_factor=Math.max(tessellation_factor, 0);
+                    console.log(tessellation_factor);
+                    var geom = tessellate(octahedronGeo, tessellation_factor);
+                    var newMesh = new THREE.Mesh(geom, material);
+                    previousRot = currentMesh.rotation.y;  
+                    scene.remove(currentMesh);
+                    currentMesh.geometry.dispose();
+                    currentMesh.material.dispose();
+                    currentMesh = undefined;
+                    scene.add(newMesh);
+                    currentMesh = newMesh;     
+                }
+            }
+            
+            function render(){
+                requestAnimationFrame(render);
+                currentMesh.rotation.y = previousRot + 0.2 * Math.PI/180;
+                previousRot = currentMesh.rotation.y;  
+                renderer.render(scene, camera);
+            }
+
+            render();
+        </script>
+
+    </body>
+</html>

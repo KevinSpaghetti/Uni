@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Template</title>
+        <style> 
+            canvas{ 
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                bottom: 0%;
+                right: 0%;
+                margin: auto;
+            } 
+        
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+    </head>
+    <body>
+        <script>
+            var scene = new THREE.Scene();
+            var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+
+            var renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            var flower = new THREE.Object3D();
+
+            var stem_geometry = new THREE.CylinderGeometry(0.05, 0.05, 1, 24);
+            var stem_material = new THREE.MeshBasicMaterial({color: 0x289e50});
+            var stem = new THREE.Mesh(stem_geometry, stem_material);
+
+            var stamen_geometry = new THREE.SphereGeometry(0.05, 24, 24);
+            var stamen_material = new THREE.MeshBasicMaterial({color: 0x1c1e1d});
+            var stamen = new THREE.Mesh(stamen_geometry, stamen_material);
+            stamen.position.y = 0.5;
+
+            const petal_height = 0.5;
+            var petal_geometry = new THREE.CylinderGeometry(0.01, 0.06, petal_height, 24);
+            var petal_material = new THREE.MeshBasicMaterial({color: 0xc6652e});
+            
+            const nOfPetals = 15;
+            for (let rot = 0; rot < 360; rot=rot+(360/nOfPetals)) {
+                var petal_pivot = new THREE.Object3D();
+                var petal = new THREE.Mesh(petal_geometry, petal_material);    
+                petal.position.y = -petal_height/2;
+                petal_pivot.rotation.z = 90 * Math.PI/180;
+                petal_pivot.rotation.y = rot * Math.PI/180;
+                petal_pivot.add(petal);
+                stamen.add(petal_pivot);
+            }
+
+            flower.add(stem);
+            flower.add(stamen);
+            scene.add(flower);
+
+            camera.position.z = 2;
+            camera.position.y = 2;
+            camera.rotation.x = -45 * Math.PI/180;
+
+            var stats = new Stats();
+            stats.domElement.style.position = 'absolute';
+            stats.domElement.style.top = '40px';
+            document.body.appendChild(stats.domElement);
+
+            function render(){
+                requestAnimationFrame(render);
+                stats.update();
+                renderer.render(scene, camera);
+            }
+
+            render();
+        </script>
+
+    </body>
+</html>
