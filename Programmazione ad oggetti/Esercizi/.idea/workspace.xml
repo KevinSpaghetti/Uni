@@ -2,59 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="678dcfdc-e26d-46ef-8727-29f991551beb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ambulatorio/Ambulatorio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ambulatorio/Assistente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ambulatorio/Contattabile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ambulatorio/Dottore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ambulatorio/Igenista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ambulatorio/Intervento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ambulatorio/InterventoFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ambulatorio/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ambulatorio/Medico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ambulatorio/Paziente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ambulatorio/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ambulatorio/PianoTerapeutico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ambulatorio/Protesi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ambulatorio/Sala.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/concessionario/Automobile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/concessionario/AutomobileConBatteria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/concessionario/AutomobileNuova.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/concessionario/AutomobileUsata.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/concessionario/Concessionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/concessionario/Sede.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/concessionario/TestDrive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hotel/Azienda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hotel/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hotel/Contattabile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hotel/Evento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hotel/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hotel/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hotel/Prenotabile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hotel/Prenotazione.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hotel/PrenotazioneEvento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hotel/PrenotazionePeriodo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hotel/SalaConferenza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hotel/SalaRistorante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ristorante/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ristorante/LibroPrenotazioni.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ristorante/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ristorante/Ordine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ristorante/Piatto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ristorante/Prenotazione.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ristorante/Tavolo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Esercizi/com/adt/DensePoly$PolyTerm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Esercizi/com/adt/DensePoly.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Esercizi/com/adt/EmptyIntBagException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Esercizi/com/adt/IntBag.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Esercizi/com/adt/NegativeExponentException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Esercizi/com/adt/Poly$PolyTerm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Esercizi/com/adt/Poly.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Esercizi/com/adt/PolyContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Esercizi/com/adt/VectorPolyStorage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Esercizi/com/esercizi/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agenzia/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agenzia/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/agenzia/Ufficio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/agenzia/Ufficio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/agenzia/Abitazione$AbitazioneBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/agenzia/Abitazione.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/agenzia/Abitazione.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/agenzia/AgenteImmobiliare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/agenzia/Appartamento$AppartamentoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/agenzia/Appartamento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/agenzia/Domanda.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/agenzia/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/agenzia/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/agenzia/Offerta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/agenzia/Richiedente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/agenzia/Ufficio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ambulatorio/Ambulatorio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ambulatorio/Assistente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ambulatorio/Contattabile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ambulatorio/Dottore.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ambulatorio/Igenista.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ambulatorio/Intervento.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ambulatorio/InterventoFactory$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ambulatorio/InterventoFactory$Tipo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ambulatorio/InterventoFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ambulatorio/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ambulatorio/Medico.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ambulatorio/Paziente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ambulatorio/PianoTerapeutico.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ambulatorio/Protesi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ambulatorio/Sala.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/DensePoly.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/IntBag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/Interfaces/PolynomialOperations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/Poly.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/PolyTerm.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adt/PolyTerm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adt/exceptions/EmptyIntBagException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/concessionario/AutomobileConBatteria$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/concessionario/AutomobileConBatteria$Batteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/concessionario/AutomobileConBatteria.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/concessionario/AutomobileNuova.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/concessionario/AutomobileUsata.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/concessionario/Feature.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/concessionario/Sede.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/concessionario/Sede.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adt/DensePolyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adt/IntBagTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/adt/PolyTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,116 +54,97 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-2065005457">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="18" />
-          <entry key="project.open.time.107" value="1" />
-          <entry key="project.open.time.110" value="1" />
-          <entry key="project.open.time.127" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.31" value="1" />
-          <entry key="project.open.time.33" value="1" />
-          <entry key="project.open.time.37" value="1" />
-          <entry key="project.open.time.50" value="1" />
-          <entry key="project.open.time.51" value="1" />
-          <entry key="project.open.time.58" value="1" />
-          <entry key="project.open.time.62" value="1" />
-          <entry key="project.open.time.67" value="1" />
-          <entry key="project.open.time.73" value="1" />
-          <entry key="project.open.time.80" value="1" />
-          <entry key="project.open.time.82" value="1" />
-          <entry key="project.open.time.92" value="1" />
-          <entry key="project.opened" value="18" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="162" />
-          <entry key="kt" value="1" />
-          <entry key="xml" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="161" />
-          <entry key="Kotlin" value="1" />
-          <entry key="Scratch" value="1" />
-          <entry key="XML" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="dummy" value="1" />
-          <entry key="java" value="32736" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="32727" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Scratch" value="9" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ambulatorio/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="60">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ambulatorio/PianoTerapeutico.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ristorante/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="375">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ambulatorio/Intervento.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/agenzia/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ambulatorio/InterventoFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ambulatorio/Protesi.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="435">
+              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ambulatorio/Ambulatorio.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/agenzia/Ufficio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+            <state relative-caret-position="210">
+              <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Persona.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Prenotazione.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hotel/PrenotazioneEvento.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hotel/PrenotazionePeriodo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hotel/SalaConferenza.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hotel/SalaRistorante.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="10" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -292,9 +263,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="328" />
+    <option name="y" value="155" />
+    <option name="width" value="1430" />
+    <option name="height" value="899" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -305,7 +278,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -337,37 +309,31 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ambulatorio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Esercizi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="Esercizi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="agenzia" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546548083595" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="junit.framework.TestCase" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/Tests/com/adt" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -442,6 +408,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.adt" />
       <option name="MAIN_CLASS_NAME" value="com.adt.IntBagTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -456,16 +423,17 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.adt" />
       <option name="MAIN_CLASS_NAME" value="com.adt.PolyTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.PolyTest" />
-      <item itemvalue="JUnit.IntBagTest" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Sede" />
+      <item itemvalue="JUnit.IntBagTest" />
+      <item itemvalue="JUnit.PolyTest" />
     </list>
     <recent_temporary>
       <list>
@@ -476,6 +444,9 @@
         <item itemvalue="JUnit.IntBagTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -520,10 +491,9 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1035" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21030043" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21664888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -540,7 +510,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32891566" />
+      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.32857144" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -549,6 +519,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.3297568" />
+      <window_info anchor="right" id="Maven" order="8" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19098713" />
@@ -579,9 +550,6 @@
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.3297568" />
     </layout-to-restore>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/ambulatorio/Dottore.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -601,49 +569,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/concessionario/Feature.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Main.kt" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Contattabile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Sala.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Persona.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Evento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/SalaRistorante.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Azienda.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ristorante/LibroPrenotazioni.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -667,13 +593,6 @@
             <element signature="e#557#558#0" expanded="true" />
             <element signature="e#586#587#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/concessionario/Automobile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -730,65 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/concessionario/AutomobileUsata.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="90" selection-start-line="16" selection-start-column="90" selection-end-line="16" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Prenotazione.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/SalaConferenza.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/PrenotazioneEvento.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="86" lean-forward="true" selection-start-line="11" selection-start-column="73" selection-end-line="11" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/PrenotazionePeriodo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Prenotabile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ristorante/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/agenzia/AgenteImmobiliare.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -838,20 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/agenzia/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/agenzia/Ufficio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/agenzia/Richiedente.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -883,42 +729,168 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/ambulatorio/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ambulatorio/PianoTerapeutico.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ambulatorio/Intervento.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ambulatorio/InterventoFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ambulatorio/Protesi.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ambulatorio/Ambulatorio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        <state relative-caret-position="300">
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Prenotabile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/concessionario/Automobile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/concessionario/AutomobileUsata.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Azienda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Cliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Contattabile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Evento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ristorante/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenzia/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Persona.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/Prenotazione.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/PrenotazioneEvento.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/PrenotazionePeriodo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/SalaConferenza.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hotel/SalaRistorante.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/agenzia/Ufficio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
         </state>
       </provider>
     </entry>
