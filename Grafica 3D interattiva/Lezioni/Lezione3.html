@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Template</title>
+        <style> 
+            canvas{ 
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                bottom: 0%;
+                right: 0%;
+                margin: auto;
+            } 
+        
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+        <script src="./libs/OBJLoader.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+    </head>
+    <body>
+        <script>
+            var scene = new THREE.Scene();
+            var camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+
+            var renderer = new THREE.WebGLRenderer();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            //Triangle
+            
+            var geometry = new THREE.Geometry();
+            geometry.vertices.push(new THREE.Vector3(0,1,0));
+            geometry.vertices.push(new THREE.Vector3(-1,0,0));
+            geometry.vertices.push(new THREE.Vector3(1,0,0));
+            geometry.faces.push(new THREE.Face3(0,1,2));
+            var material = new THREE.MeshBasicMaterial({color: 0x00ff00, side: THREE.FrontSide});
+            var triangle = new THREE.Mesh(geometry, material);
+            scene.add(triangle);
+            
+
+            camera.position.z = 5;
+
+
+
+            var stats = new Stats();
+            stats.domElement.style.position = 'absolute';
+            stats.domElement.style.top = '0px';
+            document.body.appendChild(stats.domElement);
+
+            function render(){
+                requestAnimationFrame(render);
+                stats.update();
+                renderer.render(scene, camera);
+            }
+
+            render();
+        </script>
+
+    </body>
+</html>

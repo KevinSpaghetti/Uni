@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>Camera Virtuale</title>
+		<style>
+
+		body {
+			font-family: Monospace;
+			background-color: #f0f0f0;
+			margin: 0px;
+			overflow: hidden;
+		}
+
+		canvas {
+			width: 100%;
+			height: 100%;
+		}
+
+	</style>
+		<script src="libs/three.js"></script>
+		<script src="libs/stats.min.js"></script>
+		<script src="libs/Coordinates.js"></script>
+		<script src="libs/OrbitControls.js"></script>
+	</head>
+	<body>
+
+		<script>
+
+		var scene, camera, renderer, controls, stats;
+
+		function Start() {
+			scene = new THREE.Scene();
+			var aspectRatio = window.innerWidth / window.innerHeight;
+			camera = new THREE.OrthographicCamera( -aspectRatio*10/2, aspectRatio*10/2, 10/2, -10/2, -1000, 1000);
+
+			renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			renderer.setClearColor( 0xf0f0f0 );
+			document.body.appendChild( renderer.domElement );
+
+			camera.position.set(3,4,6);
+			camera.lookAt( new THREE.Vector3(0,0,0));
+
+			var geometry = new THREE.BoxGeometry(2,2,2);
+			var material = new THREE.MeshBasicMaterial( { color: 0xaaaaaa, transparent: true, opacity:0.4 } );
+			var cube = new THREE.Mesh( geometry, material );
+
+			scene.add( cube );
+
+			Coordinates.drawAllAxes();
+
+			controls = new THREE.OrbitControls( camera );
+
+
+
+			stats = new Stats();
+			stats.domElement.style.position = 'absolute';
+			stats.domElement.style.top = '0px';
+			document.body.appendChild( stats.domElement );
+
+		}
+
+		function Update() {
+			requestAnimationFrame( Update );
+			controls.update();
+			stats.update();
+			Render();
+		}
+
+		function Render() {
+
+			renderer.render(scene, camera);
+		}
+
+		Start();
+		Update();
+
+		</script>
+	</body>
+</html>
