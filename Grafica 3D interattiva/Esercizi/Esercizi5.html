@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<title>Sistema Solare</title>
+		<style>
+
+		body {
+			font-family: Monospace;
+			background-color: #f0f0f0;
+			margin: 0px;
+			overflow: hidden;
+		}
+
+		canvas {
+			width: 100%;
+			height: 100%;
+		}
+
+	</style>
+		<script src="libs/three.js"></script>
+		<script src="libs/stats.min.js"></script>
+		<script src="libs/Coordinates.js"></script>
+		<script src="libs/OrbitControls.js"></script>
+	</head>
+	<body>
+
+		<script>
+
+		var scene, camera, renderer, controls, stats;
+
+		var earth, sun, moon, pivot;
+		var earth_pivot, moon_pivot, sun_pivot;
+
+		function Start() {
+			scene = new THREE.Scene();
+			camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+			renderer = new THREE.WebGLRenderer({antialiasing: true});
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			renderer.setClearColor( 0x000000 );
+			document.body.appendChild( renderer.domElement );
+			camera.position.set(4,5,7);
+			camera.lookAt( new THREE.Vector3(0,0,0));
+			//Coordinates.drawAllAxes();
+			controls = new THREE.OrbitControls( camera );
+
+			stats = new Stats();
+			stats.domElement.style.position = 'absolute';
+			stats.domElement.style.top = '0px';
+			document.body.appendChild( stats.domElement );
+
+			const wireframeEnabled = true;
+
+			var sun_geometry = new THREE.SphereGeometry(2, 24, 24);
+			var sun_material = new THREE.MeshBasicMaterial({color: 0xe8ed0a, wireframe: wireframeEnabled});
+			sun = new THREE.Mesh(sun_geometry, sun_material);
+
+			var earth_geometry = new THREE.SphereGeometry(0.5, 24, 24);
+			var earth_material = new THREE.MeshBasicMaterial({color: 0xac4ed, wireframe: wireframeEnabled});
+			earth = new THREE.Mesh(earth_geometry, earth_material);
+			
+			var moon_geometry = new THREE.SphereGeometry(0.2, 24, 24);
+			var moon_material = new THREE.MeshBasicMaterial({color: 0xd6d6d6, wireframe: wireframeEnabled});
+			moon = new THREE.Mesh(moon_geometry, moon_material);
+
+			sun_pivot = new THREE.Object3D();
+			earth_pivot = new THREE.Object3D();
+			moon_pivot = new THREE.Object3D();
+
+			scene.add(sun_pivot);
+			scene.add(sun);
+
+			sun_pivot.add(earth_pivot);
+			earth_pivot.add(earth);
+			earth_pivot.add(moon_pivot);
+			moon_pivot.add(moon);
+
+			earth_pivot.position.x = 5;
+			moon.position.x = 1.5;
+
+			earth_pivot.rotation.z = 25 * Math.PI/180;
+
+			camera.position.x = 0;
+			camera.position.y = 0;
+
+			camera.position.z = 12;
+		}
+
+		function Update() {
+			requestAnimationFrame( Update );
+			controls.update();
+			stats.update();
+			Render();
+		}
+
+		function Render() {
+			sun_pivot.rotation.y += 0.4 * Math.PI/180;			 
+			earth.rotation.y += 0.4 * Math.PI/180;	
+			moon.rotation.y += 0.1 * Math.PI/180;
+			moon_pivot.rotation.y += 0.4 * Math.PI/180;
+			
+			renderer.render(scene, camera);
+		}
+
+		Start();
+		Update();
+
+		</script>
+	</body>
+</html>
