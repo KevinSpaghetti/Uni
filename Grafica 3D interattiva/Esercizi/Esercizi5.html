@@ -48,7 +48,12 @@
 			stats.domElement.style.top = '0px';
 			document.body.appendChild( stats.domElement );
 
-			const wireframeEnabled = true;
+			const wireframeEnabled = false;
+
+			var texture = new THREE.TextureLoader().load('textures/skybox.png');
+			var skybox_geom = new THREE.SphereGeometry(20, 24, 24);
+			var skybox_mat = new THREE.MeshBasicMaterial({map:texture, side: THREE.BackSide})
+			var skybox = new THREE.Mesh(skybox_geom, skybox_mat);
 
 			var sun_geometry = new THREE.SphereGeometry(2, 24, 24);
 			var sun_material = new THREE.MeshBasicMaterial({color: 0xe8ed0a, wireframe: wireframeEnabled});
@@ -66,6 +71,7 @@
 			earth_pivot = new THREE.Object3D();
 			moon_pivot = new THREE.Object3D();
 
+			scene.add(skybox);
 			scene.add(sun_pivot);
 			scene.add(sun);
 
@@ -92,13 +98,27 @@
 			Render();
 		}
 
+		const year = 365 * 1000;
+		var previous_time = Date.now();
+		var current_time = Date.now();
+
+
 		function Render() {
-			sun_pivot.rotation.y += 0.4 * Math.PI/180;			 
+			var current_time = Date.now();
+			var delta_time = current_time-previous_time;
+
+			var sun_rot = delta_time*365/year;
+			var moon_rot = delta_time*365*12/year;
+
+			sun_pivot.rotation.y += sun_rot * Math.PI/180;			 
+			moon_pivot.rotation.y += moon_rot* Math.PI/180;
+
 			earth.rotation.y += 0.4 * Math.PI/180;	
 			moon.rotation.y += 0.1 * Math.PI/180;
-			moon_pivot.rotation.y += 0.4 * Math.PI/180;
 			
 			renderer.render(scene, camera);
+
+			previous_time = current_time;
 		}
 
 		Start();
