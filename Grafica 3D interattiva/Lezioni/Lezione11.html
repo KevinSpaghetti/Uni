@@ -1,0 +1,209 @@
+<html>
+	<head>
+		<title>Shading Texture Driven</title>
+		<style>
+
+		body {
+			font-family: Monospace;
+			background-color: #f0f0f0;
+			margin: 0px;
+			overflow: hidden;
+		}
+
+		canvas {
+			width: 100%;
+			height: 100%;
+		}
+
+	</style>
+		<script src="libs/three.js"></script>
+		<script src="libs/stats.min.js"></script>
+		<script src="libs/Coordinates.js"></script>
+		<script src="libs/OrbitControls.js"></script>
+	</head>
+	<body>
+
+		<script type="shader/vertex" id="vShader">
+			varying vec3 vPosition;
+			varying vec3 vNormal;
+			varying vec2 vUv;
+			
+			void main(){
+			  vec4 vPos = modelViewMatrix * vec4(position, 1.0);
+			  vPosition = vPos.xyz;
+			  vNormal = normalMatrix * normal;
+			  vUv = uv;
+			  gl_Position = projectionMatrix * vPos;
+			}
+		</script>
+		<script type="shader/fragment" id="fShader">	
+			varying vec3 vPosition;
+			varying vec3 vNormal;
+			varying vec2 vUv;
+
+			uniform vec3 pointLightPosition;
+			uniform vec3 clight;
+
+			uniform sampler2D diffuseMap;
+			uniform sampler2D roughnessMap;
+			uniform sampler2D specularMap;
+
+			vec3 cdiff;
+			float roughness;
+			vec3 cspec;
+
+			const float PI = 3.14159;
+
+			vec3 FSchlick(vec3 l, vec3 h){
+				float lDoth = max(dot(l,h), 0.000001);
+				return (cspec + (vec3(1.0) - cspec) * pow(1.0 - lDoth, 5.0));
+			}
+
+			float DGGX(vec3 n, vec3 h, float alpha){
+				float nDoth = max(dot(n,h), 0.000001);
+				float alpha2 = alpha * alpha;
+				float d = nDoth * nDoth * (alpha2 - 1.0)+1.0;
+				return (alpha2 / (PI*d*d));
+			}
+
+			float G1(vec3 a, vec3 b, float k){
+				float aDotb = max(dot(a,b), 0.000001);
+				return (aDotb / (aDotb * (1.0 - k) + k) );
+			}
+
+			float GSmith(vec3 n, vec3 v, vec3 l){
+				float k = roughness * roughness;
+				return G1(n, l, k) * G1(n, v, k);
+			}
+			
+			//l: direzione da cui proviene la luce
+			//n: normale del punto
+			//v: punto da dove guardiamo il pixel
+			//h: vettore che sta a metà tra la luce l e il view vector v
+			void main(){
+				vec4 lPosition = viewMatrix * vec4(pointLightPosition, 1.0);
+				
+				vec3 l = normalize(lPosition.xyz - vPosition.xyz);
+				vec3 n = normalize(vNormal);
+				vec3 v = normalize(-vPosition);
+				vec3 h = normalize(v + l);
+				
+				float nDotl = max(dot(n,l), 0.000001); 
+				float nDotv = max(dot(n,v), 0.000001);
+
+				cdiff = texture2D(diffuseMap, vUv*vec2(5)).rgb;
+				cdiff = pow(cdiff, vec3(2.2));
+				cspec = texture2D(specularMap, vUv*vec2(5)).rgb;
+				cspec = pow(cspec, vec3(2.2));
+				roughness = texture2D(roughnessMap, vUv).r;
+
+				vec3 fresnel = FSchlick(l, h);
+				float geometryFactor = GSmith(n, v, l);
+				float normalDistribution = DGGX(n, h, roughness*roughness);
+
+				//cdiff/PI è la diffuse lambertiana
+				//la seconda parte è cook torrance
+
+				vec3 lambert = ((vec3(1.0)-fresnel) * cdiff/PI);
+				vec3 cookTorrance = fresnel * normalDistribution * geometryFactor / (4.0 * nDotl * nDotv);
+
+				vec3 specularBRDF = lambert + cookTorrance;
+
+				vec3 outRadiance = PI * clight * nDotl * specularBRDF;
+
+				gl_FragColor = vec4(pow(outRadiance, vec3(1.0/2.2)),1.0);
+			}
+		</script>
+
+
+		<script>
+
+		var scene, camera, renderer, controls, stats;
+
+		function Start() {
+			scene = new THREE.Scene();
+			camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+			renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			renderer.setClearColor( 0xf0f0f0 );
+			document.body.appendChild( renderer.domElement );
+
+			camera.position.set(3,4,6);
+			camera.lookAt( new THREE.Vector3(0,0,0));
+
+			var vShader = document.querySelector('#vShader').textContent;
+			var fShader = document.querySelector('#fShader').textContent;
+
+			const intensity = 1.0;
+
+			let textureName = 'Wood_StaggeredFloorPlanks';
+
+			console.log('./textures/'+textureName+'_Roughness.png');
+
+			let specularMap = new THREE.TextureLoader().load('./textures/'+textureName+'_Specular.png');
+			let diffuseMap = new THREE.TextureLoader().load('./textures/'+textureName+'_Diffuse.png');
+			let roughnessMap = new THREE.TextureLoader().load('./textures/'+textureName+'_Roughness.png');
+
+			function setTxt(txt){
+				txt.minFilter = THREE.LinearMipMapLinearFilter;
+				txt.anisotropy = renderer.getMaxAnisotropy();
+				txt.wrapS = txt.wrapT = THREE.RepeatWrapping;
+				txt.needsUpdate = true;
+			}
+
+			setTxt(specularMap);
+			setTxt(diffuseMap);
+			setTxt(roughnessMap);
+
+			console.log(specularMap);
+
+			let uniforms = {
+				specularMap: {type: 't', value: specularMap},
+				diffuseMap: {type: 't', value: diffuseMap},
+				roughnessMap: {type: 't', value: roughnessMap},
+				
+				clight: {type: 'v3', value: new THREE.Vector4(1*intensity,1*intensity,1*intensity)},
+				pointLightPosition: {type: 'v3', value: new THREE.Vector3(7,7,7)}
+			}
+
+			var geometry = new THREE.SphereGeometry(3,64,64);
+			var microfacetBRDF = new THREE.ShaderMaterial({
+				uniforms: uniforms,
+				vertexShader: vShader,
+				fragmentShader: fShader
+			}); 
+
+			microfacetBRDF.needsUpdate = true;
+
+			var mesh = new THREE.Mesh( geometry, microfacetBRDF );
+			scene.add( mesh );
+			
+			Coordinates.drawAllAxes();
+
+			controls = new THREE.OrbitControls( camera );
+			stats = new Stats();
+			stats.domElement.style.position = 'absolute';
+			stats.domElement.style.top = '0px';
+			document.body.appendChild( stats.domElement );
+
+		}
+
+		function Update() {
+			requestAnimationFrame( Update );
+			controls.update();
+			stats.update();
+			Render();
+		}
+
+		function Render() {
+
+			renderer.render(scene, camera);
+		}
+
+		Start();
+		Update();
+
+		</script>
+	</body>
+</html>

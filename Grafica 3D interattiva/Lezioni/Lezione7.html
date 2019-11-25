@@ -1,0 +1,120 @@
+<html>
+	<head>
+		<title>Shaders</title>
+		<style>
+
+		body {
+			font-family: Monospace;
+			background-color: #f0f0f0;
+			margin: 0px;
+			overflow: hidden;
+		}
+
+		canvas {
+			width: 100%;
+			height: 100%;
+		}
+
+	</style>
+		<script src="libs/three.js"></script>
+		<script src="libs/stats.min.js"></script>
+		<script src="libs/Coordinates.js"></script>
+		<script src="libs/OrbitControls.js"></script>
+	</head>
+	<body>
+
+		<script type="text/x-glsl" id="vertex">
+			uniform vec3 materialColor;
+			varying vec3 vColor;
+
+			attribute float displacement;
+
+			void main(){
+				vec3 newPosition = position + normal * displacement;
+				gl_Position = projectionMatrix * modelViewMatrix * vec4(newPosition, 1.0);
+				vColor = materialColor;
+			}
+
+		</script>
+
+		<script type="text/x-glsl" id="fragment">
+			varying vec3 vColor;
+
+			void main(){
+				gl_FragColor = vec4(vColor, 1.0);
+			}
+
+		</script>
+
+
+		<script>
+
+		var scene, camera, renderer, controls, stats;
+
+		function Start() {
+			scene = new THREE.Scene();
+			camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+			renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			renderer.setClearColor( 0xf0f0f0 );
+			document.body.appendChild( renderer.domElement );
+
+			camera.position.set(3,4,6);
+			camera.lookAt( new THREE.Vector3(0,0,0));
+
+			var uniforms = {
+				"materialColor": {type:"v3", value: THREE.Vector3()}
+			};
+
+			var vs = document.getElementById("vertex").textContent;
+			var fs = document.getElementById("fragment").textContent;
+
+			uniforms.materialColor.value = new THREE.Vector3(1.0,0.0,0.0);
+
+			var sphere = new THREE.SphereBufferGeometry(2,24,24);
+			var displacement = new Float32Array(sphere.geometry.attributes.position.count);
+			for (let i= 0; i < displacement.length; i++) {
+				displacement[i] = Math.random() * 5;
+			}
+
+			var material = new THREE.ShaderMaterial({
+				uniforms: uniforms,
+				vertexShader: vs,
+				fragmentShader: fs
+			});
+			//var material = new THREE.MeshBasicMaterial( { color: 0x666666} );
+			//1 dice quanti elementi prendere alla volta per creare l'attributo dal vettore (per vec4 : 4);
+			sphere.geometry.addAttributes('displacement', new THREE.BufferAttribute(displacement, 1));
+			var cube = new THREE.Mesh( sphere, material );
+
+			scene.add( cube );
+
+			//Coordinates.drawAllAxes();
+
+			controls = new THREE.OrbitControls( camera );
+			stats = new Stats();
+			stats.domElement.style.position = 'absolute';
+			stats.domElement.style.top = '0px';
+			document.body.appendChild( stats.domElement );
+
+		}
+
+		function Update() {
+			requestAnimationFrame( Update );
+			controls.update();
+			stats.update();
+			Render();
+		}
+
+		function Render() {
+
+			renderer.render(scene, camera);
+		}
+
+		Start();
+		Update();
+
+		</script>
+	</body>
+</html>
