@@ -1,0 +1,233 @@
+<html>
+	<head>
+		<title>Shading Texture Driven</title>
+		<style>
+
+		body {
+			font-family: Monospace;
+			background-color: #f0f0f0;
+			margin: 0px;
+			overflow: hidden;
+		}
+
+		canvas {
+			width: 100%;
+			height: 100%;
+		}
+
+	</style>
+		<script src="libs/three.js"></script>
+		<script src="libs/stats.min.js"></script>
+		<script src="libs/OBJLoader.js"></script>
+		<script src="libs/MTLLoader.js"></script>
+		<script src="libs/Coordinates.js"></script>
+		<script src="libs/OrbitControls.js"></script>
+	</head>
+	<body>
+
+		<script type="shader/vertex" id="vShader">
+			varying vec3 vPosition;
+			varying vec3 vNormal;
+			varying vec2 uVv;
+			
+			void main(){
+			  vec4 vPos = modelViewMatrix * vec4(position, 1.0);
+			  vPosition = vPos.xyz;
+			  vNormal = normalMatrix * normal;
+			  uVv = uv;
+			  gl_Position = projectionMatrix * vPos;
+			}
+		</script>
+		<script type="shader/fragment" id="fShader">
+			precision highp float;
+			precision highp int;
+
+			varying vec3 vPosition;
+			varying vec3 vNormal;
+			varying vec2 uVv;
+
+			uniform vec3 cspec;
+
+			uniform sampler2D normalMap;
+			uniform samplerCube envMap;
+			uniform vec2 normalScale;
+			uniform float roughness;
+
+			const float PI = 3.14159;
+
+			float pow2( const in float x ) { return x*x; }
+
+			float getSpecularMIPLevel( const in float blinnShininessExponent, const in int maxMIPLevel){
+				float maxMIPLevelScalar = float(maxMIPLevel);
+				float desiredMIPLevel = maxMIPLevelScalar - 0.79248 - 0.5 * log2( pow2( blinnShininessExponent + 1.0));
+				return clamp(desiredMIPLevel, 0.0, maxMIPLevelScalar);
+			}
+
+			float GGXRoughnessToBlinnExponent( const in float ggxRoughness) {
+				return ( 2.0 / pow2(ggxRoughness + 0.0001) - 2.0);
+			}
+
+			//Dalla posizione dell'eye e dalla normale della superfice
+			//otteniamo il texel sulla cubemap
+			vec3 perturbNormal2Arb(vec3 eye_pos, vec3 surf_norm){
+				vec3 q0 = dFdx( eye_pos.xyz );
+				vec3 q1 = dFdy( eye_pos.xyz );
+				vec2 st0 = dFdx( uVv.st );
+				vec2 st1 = dFdy( uVv.st );
+
+				//(S,T,R): vettore orientato verso il textel da ritornare
+				vec3 S = normalize(  q0 * st1.t - q1 * st0.t );
+				vec3 T = normalize( -q0 * st1.s + q1 * st0.s );
+				vec3 N =  surf_norm ;
+
+				//Dobbiamo mappare le riflessioni anche alle normali
+				vec3 mapN = normalize(texture2D( normalMap, uVv ).xyz * 2.0 - 1.0);
+				mapN.xy = normalScale * mapN.xy;
+				mat3 tsn = mat3( S, T, N );
+				return normalize( tsn * mapN );
+			}
+
+			vec3 inverseTransformDirection(in vec3 dir, in mat4 matrix) {
+				return normalize( ( vec4(dir, 0.0) * matrix).xyz);
+			}
+
+			vec3 BRDF_Specular_GGX_Environment( vec3 normal, vec3 viewDir, const in vec3 cspec, const in float roughness){
+				float dotNV = saturate( dot( normal, viewDir));
+				const vec4 c0 = vec4( -1, -0.0275, - 0.572, 0.022);
+				const vec4 c1 = vec4( 1, 0.0425, 1.04, -0.04);
+				vec4 r = roughness * c0 + c1;
+				float a004 = min( r.x * r.x, exp2(-9.28 * dotNV)) * r.x + r.y;
+				vec2 AB = vec2(-1.04, 1.04) * a004 + r.zw;
+				return cspec * AB.x + AB.y;
+			}
+
+			void main(){
+				//n: normale della superfice
+				vec3 n = perturbNormal2Arb( vPosition, normalize(vNormal));
+				vec3 v = normalize(-vPosition);
+				//vReflect: vettore che rappresenta il raggio di riflessione
+				vec3 vReflect = refract(vPosition, n, 1.52);
+
+				//r: vReflect in worldSpace
+				vec3 r = inverseTransformDirection( vReflect, viewMatrix);
+
+				float blinnShininessExponent = GGXRoughnessToBlinnExponent(roughness);
+				float specularMIPLevel = getSpecularMIPLevel(blinnShininessExponent, 8);
+
+				vec3 envLight = textureCubeLodEXT( envMap, vec3(-r.x, r.yz), specularMIPLevel).rgb;
+
+				envLight = pow(envLight, vec3(2.2));
+				vec3 outRadiance = envLight * BRDF_Specular_GGX_Environment(n, v, cspec, roughness);
+
+				gl_FragColor = vec4( pow(outRadiance, vec3(1.0/2.2)), 1.0);
+			}
+
+		</script>
+
+
+		<script>
+
+		var scene, camera, renderer, controls, stats;
+
+		function Start() {
+			scene = new THREE.Scene();
+			camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+			renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			renderer.setClearColor( 0xf0f0f0 );
+			document.body.appendChild( renderer.domElement );
+
+			camera.position.set(3,4,6);
+			camera.lookAt( new THREE.Vector3(0,0,0));
+
+			let light = new THREE.AmbientLight(0x909090);
+			scene.add(light);
+
+			let loader = new THREE.OBJLoader();
+			loader.setPath('models/');
+			loader.load('chinese_coin.obj', ( model ) => {
+
+				var textureParameters = {
+					normalScale: 0.0,
+					roughness: 0.5,
+				}
+
+				normalMap = loadTexture('textures/normal.jpg');
+
+				var cubeTxtLoader = new THREE.CubeTextureLoader();
+				cubeTxtLoader.setPath('textures/cubemap/');
+				var textureCube = cubeTxtLoader.load([
+					'posx.png', 'negx.png',
+					'posy.png', 'negy.png',
+					'posz.png', 'negz.png'
+				]);
+
+				scene.background = textureCube;
+				textureCube.minFilter = THREE.LinearMipMapLinearFilter;
+
+				uniforms = {
+					cspec: { type: 'v3', value: new THREE.Vector3(0.8,0.8,0.8)},
+					normalMap: { type: 't', value: normalMap},
+					normalScale: { type: 'v2', value: new THREE.Vector2(1,1)},
+					envMap: { type: 't', value: textureCube},
+					roughness: { type: 'f', value: 0.5}
+				}
+
+				vs = document.querySelector('#vShader').textContent;
+				fs = document.querySelector('#fShader').textContent;
+
+				let material = new THREE.ShaderMaterial({
+					uniforms: uniforms,
+					vertexShader: vs,
+					fragmentShader: fs,
+					extensions: {
+						derivatives: true,
+						shaderTextureLOD: true
+					}
+				});
+
+				let geometry = model.children[0].geometry;
+				let coin = new THREE.Mesh(geometry, material);
+
+				scene.add(coin);
+				coin.scale.set(0.2, 0.2, 0.2);
+			});
+
+			controls = new THREE.OrbitControls( camera );
+			stats = new Stats();
+			stats.domElement.style.position = 'absolute';
+			stats.domElement.style.top = '0px';
+			document.body.appendChild( stats.domElement );
+
+		}
+
+		function loadTexture(file) {
+			var texture = new THREE.TextureLoader().load( file , function ( texture ) {
+				texture.minFilter = THREE.LinearMipMapLinearFilter;
+				texture.anisotropy = renderer.getMaxAnisotropy();
+				texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+				texture.offset.set( 0, 0 );
+				texture.needsUpdate = true;
+			} )
+			return texture;
+		}
+
+		function Update() {
+			requestAnimationFrame( Update );
+			controls.update();
+			stats.update();
+			Render();
+		}
+
+		function Render() {
+
+			renderer.render(scene, camera);
+		}
+
+		Start();
+		Update();
+
+		</script>
+	</body>
+</html>

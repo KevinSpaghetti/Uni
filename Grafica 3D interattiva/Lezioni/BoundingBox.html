@@ -1,0 +1,142 @@
+<html>
+	<head>
+		<title>Shading Texture Driven</title>
+		<style>
+
+		body {
+			font-family: Monospace;
+			background-color: #f0f0f0;
+			margin: 0px;
+			overflow: hidden;
+		}
+
+		canvas {
+			width: 100%;
+			height: 100%;
+		}
+
+	</style>
+		<script src="libs/three.js"></script>
+		<script src="libs/stats.min.js"></script>
+		<script src="libs/OBJLoader.js"></script>
+		<script src="libs/MTLLoader.js"></script>
+		<script src="libs/Coordinates.js"></script>
+		<script src="libs/OrbitControls.js"></script>
+	</head>
+	<body>
+
+		<script>
+
+		var scene, camera, renderer, controls, stats;
+
+		function Start() {
+			scene = new THREE.Scene();
+			camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+			renderer = new THREE.WebGLRenderer({antialias: true});
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			renderer.setClearColor( 0xf0f0f0 );
+			document.body.appendChild( renderer.domElement );
+
+			camera.position.set(3,4,6);
+			camera.lookAt( new THREE.Vector3(0,0,0));
+
+			let light = new THREE.AmbientLight(0x9A9A9A);
+			scene.add(light);
+
+			let loader = new THREE.OBJLoader();
+			let mtlLoader = new THREE.MTLLoader();
+			mtlLoader.setPath('models/');
+			mtlLoader.load('chinese_coin.mtl', (materials) => {
+				materials.preload();
+
+				loader.setMaterials(materials);
+				loader.setPath('models/');
+				loader.load('chinese_coin.obj', ( model ) => {
+					let geometry = model.children[0].geometry;
+
+					let vertices = [];
+					for(let i=0, l = geometry.attributes.position.count; i < l; i++){
+						vector = new THREE.Vector3();
+						vector.fromBufferAttribute(geometry.attributes.position, i);
+
+						vertices.push(vector);
+					}
+
+					let bbGeometry = calculateBoundingSphere(vertices);
+					let bbMaterial = new THREE.MeshBasicMaterial({color: 0x0000AA, wireframe: true});
+					let boundingBoxMesh = new THREE.Mesh(bbGeometry, bbMaterial);
+
+					scene.add(model);
+					model.add(boundingBoxMesh);
+					model.scale.set(0.2, 0.2, 0.2);
+				});
+			});
+
+			controls = new THREE.OrbitControls( camera );
+			stats = new Stats();
+			stats.domElement.style.position = 'absolute';
+			stats.domElement.style.top = '0px';
+			document.body.appendChild( stats.domElement );
+
+		}
+
+		function calculateBoundingBox(vertices){
+			let minX = 0, maxX = 0;
+			let minY = 0, maxY = 0;
+			let minZ = 0, maxZ = 0;
+
+			vertices.forEach((vertex) => {
+				if(vertex.x > maxX) maxX = vertex.x;
+				if(vertex.x < minX) minX = vertex.x;
+				if(vertex.y > maxY) maxY = vertex.y;
+				if(vertex.y < minY) minY = vertex.y;
+				if(vertex.z > maxZ) maxZ = vertex.z;
+				if(vertex.z < minZ) minZ = vertex.z;
+
+			});
+
+			let boxGeometry = new THREE.BoxGeometry(maxX-minX, maxY-minY, maxZ-minZ);
+
+			return boxGeometry;
+		}
+
+		function calculateBoundingSphere(vertices){
+			let minX = 0, maxX = 0;
+			let minY = 0, maxY = 0;
+			let minZ = 0, maxZ = 0;
+
+			vertices.forEach((vertex) => {
+				if(vertex.x > maxX) maxX = vertex.x;
+				if(vertex.x < minX) minX = vertex.x;
+				if(vertex.y > maxY) maxY = vertex.y;
+				if(vertex.y < minY) minY = vertex.y;
+				if(vertex.z > maxZ) maxZ = vertex.z;
+				if(vertex.z < minZ) minZ = vertex.z;
+
+			});
+
+			let sphereGeometry = new THREE.SphereGeometry(Math.max(maxX-minX, maxY-minY, maxZ-minZ) / 2, 24, 24);
+
+			return sphereGeometry;
+
+		}
+		
+		function Update() {
+			requestAnimationFrame( Update );
+			controls.update();
+			stats.update();
+			Render();
+		}
+
+		function Render() {
+
+			renderer.render(scene, camera);
+		}
+
+		Start();
+		Update();
+
+		</script>
+	</body>
+</html>
