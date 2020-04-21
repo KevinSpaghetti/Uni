@@ -1,0 +1,324 @@
+<html>
+
+<head>
+	<title>Starting Code for 1st Project 2017 - with lights and textures</title>
+	<style>
+		body {
+			font-family: Monospace;
+			background-color: #f0f0f0;
+			margin: 0px;
+			overflow: hidden;
+		}
+
+		canvas {
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+	<script src="lib/three.min.js"></script>
+	<script src="lib/stats.min.js"></script>
+	<script src="lib/Coordinates.js"></script>
+	<script src="lib/OrbitControls.js"></script>
+	<script src="lib/dat.gui.min.js"></script>
+
+	<script src="js/Generator.js"></script>
+	<script src="js/HeightDisplacementGenerator.js"></script>
+	<script src="js/WaveDisplacementGenerator.js"></script>
+	<script src="js/ConstantDisplacementGenerator.js"></script>
+	<script src="js/NoiseDisplacementGenerator.js"></script>
+	<script src="js/MixGenerator.js"></script>
+	<script src="js/Interpolator.js"></script>
+	<script src="js/LinearInterpolator.js"></script>
+	<script src="js/HeightMap.js"></script>
+	<script src="js/HeightMapReader.js"></script>
+	<script src="js/Layout.js"></script>
+	<script src="js/Grid2DLayout.js"></script>
+</head>
+
+<body>
+
+	<style>
+		.controls{
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			width: 100%;
+			height: 128;
+			padding: 40 0 40 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+
+		#renderTarget{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+
+	<canvas id='renderTarget'>
+
+	</canvas>
+
+	<script>
+
+		function Start() {
+			scene = new THREE.Scene();
+			camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+			var renderTarget = document.getElementById('renderTarget');
+			renderer = new THREE.WebGLRenderer({ antialias: true, canvas: renderTarget });
+			renderer.setSize(window.innerWidth, window.innerHeight);
+			renderer.setClearColor(0xf0f0f0);
+			renderer.setPixelRatio(window.devicePixelRatio);
+			renderer.gammaInput = true;
+			renderer.gammaOutput = true;
+			renderer.shadowMap.enabled = true;
+
+			camera.position.set(15, 15, 15);
+			camera.lookAt(new THREE.Vector3(0, 0, 0));
+
+			hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.6);
+			hemiLight.color.setHSL(0.6, 1, 0.6);
+			hemiLight.groundColor.setHSL(0.095, 1, 0.75);
+			hemiLight.position.set(0, 50, 0);
+			scene.add(hemiLight);
+
+			stats = new Stats();
+			stats.domElement.style.position = 'absolute';
+			stats.domElement.style.top = '0px';
+			document.body.appendChild(stats.domElement);
+
+			controls = new THREE.OrbitControls(camera, renderer.domElement);
+			controls.addEventListener('change', Render);
+		}
+
+		function createTerrain(){
+
+			var heightMapReader = new HeightMapReader();	
+			heightMapReader.readDataFromSrc("textures/heightmap2.png", (map) => {
+
+				terrain = new Grid2DLayout(map.width, map.height);
+				let geometry = new THREE.BoxBufferGeometry(1, 1, 1);
+
+				terrain.addElements((i, j) => {
+					let material = new THREE.MeshLambertMaterial({ map: greenTxt });
+					var cube = new THREE.Mesh(geometry, material);
+					
+					return cube;
+				});
+
+				terrain.layoutElements();
+				terrain.displayElements();
+
+				heightGenerator = new HeightDisplacementGenerator(map);
+				generators.push(heightGenerator);
+				
+				wavePlusHeightGenerator = new MixGenerator(
+					heightGenerator,
+					waveGeneratorX,
+					(displacement1, displacement2, time) => {
+						return displacement1 + displacement2;
+					}
+				);
+				generators.push(wavePlusHeightGenerator);
+				updateGenerators();
+				
+				terrain.updateElements((i, j, object) => {
+					var yDisplacement = Math.round(heightGenerator.displacementFor(i, j));
+					object.position.set(object.position.x, yDisplacement, object.position.z);
+				});
+
+				scene.add(terrain);
+
+			});
+		}
+
+		function createClouds(){
+			//There are no clouds under the cloudsBaseline
+			var cloudsBaseline = 10;
+			var cloudNumber = 4;
+			var scatterRadius = 15;
+			clouds = new THREE.Object3D();
+
+			for (let i = 0; i < cloudNumber; i++) {				
+				cloud = new Grid2DLayout(10, 10);
+				let geometry = new THREE.BoxGeometry(1, 1, 1);
+
+				cloud.addElements((i, j) => {
+					let material = new THREE.MeshBasicMaterial({ color: 0x595959});
+					var cube = new THREE.Mesh(geometry, material);
+					return cube;
+				});
+
+				var noiseGenerator = new NoiseDisplacementGenerator();
+				cloud.updateElements((i, j, element) => {
+					var displacement = noiseGenerator.displacementFor(i,j,i*7+j*11);
+					element.position.set(element.position.x,displacement,element.position.z);
+				});
+
+				cloud.layoutElements();
+				cloud.displayElements();
+
+				var angle = (i/cloudNumber * 360) * Math.PI/180;
+				var rotationAngle = Math.random()*90;
+				
+				var cloudX = scatterRadius*Math.cos(angle+Math.random()*angle);
+				var cloudY = scatterRadius*Math.sin(angle);
+				cloud.position.set(cloudX,i*3,cloudY);
+				cloud.rotation.y = THREE.Math.degToRad(rotationAngle);
+				clouds.add(cloud);
+			}
+
+			clouds.position.set(0,cloudsBaseline,0);
+			clouds.rotation.y = THREE.Math.degToRad(45);
+
+			scene.add(clouds);
+		}
+
+		function createWorld(){
+			createTerrain();
+			createClouds();
+		}
+		
+		function Update() {
+			requestAnimationFrame(Update);
+
+			var deltaTime = Date.now() - startTime;
+			var deltaTimeTextureUpdate = Date.now() - lastTextureUpdate;
+
+			if (terrain) {
+
+				var previousGenerator = generatorHistory[generatorHistory.length-2];
+				var currentGenerator = generatorHistory[generatorHistory.length-1];
+				
+				var interpolator = new LinearInterpolator(lastGeneratorChange, transitionDuration);
+
+				terrain.updateElements((i, j, object) => {
+					var value1 = previousGenerator.displacementFor(i,j,deltaTime/1000);
+					var value2 = currentGenerator.displacementFor(i,j,deltaTime/1000);
+					var displacement = interpolator.between(value1, value2, Date.now());
+					object.position.set(object.position.x, displacement, object.position.z);
+					//Change texture based on displacement
+					if(deltaTimeTextureUpdate < textureUpdateInterval) return ;
+					var txt = object.material.map;
+					if(displacement > -0.7 && displacement < 0.7) txt = greenTxt;
+					if(displacement < -0.7) txt = brownTxt;
+					if(displacement >  0.7) txt = whiteTxt;
+					if(txt != object.material.map){
+						object.material.map = txt;
+						object.material.map.needsUpdate = true;
+						lastTextureUpdate = Date.now();
+					}else{
+						object.material.map.needsUpdate = false;
+					}
+
+			
+				});
+
+			}
+
+			framesElapsed++;
+			controls.update();
+			stats.update();
+			Render();
+		}
+
+		function Render() {
+
+			renderer.render(scene, camera);
+		}
+		
+		var scene, camera, renderer, controls, stats;
+		var terrain;
+		var clouds;
+		var generators;
+
+		var startTime = Date.now();
+		//Last time we updated our generator
+		var lastGeneratorChange = Date.now();
+		//Last time we updated our textures
+		var lastTextureUpdate = Date.now();
+		var framesElapsed = 0;
+
+		const transitionDuration = 500;
+		const textureUpdateInterval = 1000;
+
+		Start();
+
+		//Directions X and Y with respect to the terrain
+		var directionX = 0 * Math.PI/180;
+		var directionY = (directionX+90) * Math.PI/180;
+		waveGeneratorX = new WaveDisplacementGenerator(directionX, 0.5, 0.5);
+		waveGeneratorY = new WaveDisplacementGenerator(directionY, 0.9, 0.5);
+		seaGenerator = new MixGenerator(waveGeneratorX, waveGeneratorY,
+			(height1, height2) => {
+				return height1+height2;
+			});
+		var flatGenerator = new ConstantDisplacementGenerator(0);
+		
+		createWorld();
+		//Textures from https://www.kenney.nl/assets/voxel-pack
+		
+		var brownTxt = new THREE.TextureLoader().load('./textures/dirt.png');
+		var greenTxt = new THREE.TextureLoader().load('./textures/cotton_green.png');
+		var whiteTxt = new THREE.TextureLoader().load('./textures/snow.png');
+
+		//Add to this array and call updateGenerators() to update
+		//the UI
+		generators = [
+		 waveGeneratorX,
+		 waveGeneratorY, 
+		 seaGenerator,
+		 flatGenerator
+		];
+
+		var generatorHistory = [flatGenerator, flatGenerator];
+
+		Update();
+
+	</script>
+
+	<div class='controls' id='controls'>
+		<script>
+			function changeGeneratorTo(gen){
+				generatorHistory.push(gen);
+				lastGeneratorChange = Date.now();
+			}
+
+			function updateGenerators(){
+				var el = document.getElementById('controls')
+				while(el.firstChild) el.firstChild.remove();
+
+				var canvases = [];
+
+				generators.forEach((generator) => {
+					let canvas = generator.heightMap(60,60).image();
+					canvas.id     = "cv";
+					canvas.class  = 'controls-button';
+					canvas.style.width  = '128px';
+					canvas.style.height = '128px';
+					canvas.style.zIndex   = 0;
+					canvas.style.border   = "1px solid";
+					canvas.style.margin  = '10 10 10 10';
+					canvas.style.borderRadius = '2px';
+					canvas.addEventListener('click', (event) => {
+						changeGeneratorTo(generator);
+						canvases.forEach((cv) => {
+							cv.style.border = '1px solid';
+						});
+						event.target.style.border = '5px solid #1C6EA4';
+					});
+					document.getElementById('controls').appendChild(canvas); 
+					canvases.push(canvas);
+				});
+			}
+
+			updateGenerators();
+		</script>
+	</div>
+</body>
+
+</html>
