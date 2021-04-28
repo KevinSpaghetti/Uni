@@ -11,7 +11,7 @@
     "vue-media": "^1.1.1",
     "element-ui": "^2.13.0",
     "core-js": "^3.4.4",
-    "three": "^0.112.1",
+    "three": "^0.125.0",
     "vue": "^2.6.10"
   },
   "devDependencies": {
